@@ -56,4 +56,6 @@ public class PlayerMovement : MonoBehaviour
         bool isWalking = Mathf.Abs(horizontal) > 0.1f;
         animator.SetBool("Walk", isWalking);
     }
+
+    
 }
