@@ -12,6 +12,7 @@ public class deadzone : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             animator.SetBool("Dead", true);
+            Debug.Log("Morreu");
         } 
     }
 

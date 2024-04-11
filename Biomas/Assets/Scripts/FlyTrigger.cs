@@ -6,6 +6,7 @@ public class FlyTrigger : MonoBehaviour
 {
     public Animator birdAnimator;
     public Animator birdAnimator2;
+    public Diagonal scriptDiagonal, scriptDiagonal2;
 
     public void OnTriggerEnter2D(Collider2D other)
     {
@@ -13,7 +14,8 @@ public class FlyTrigger : MonoBehaviour
         {
             birdAnimator.SetBool("Fly", true);
             birdAnimator2.SetBool("Fly", true);
-            Debug.Log("Entrou");
+            scriptDiagonal.podeVoar = true;
+            scriptDiagonal2.podeVoar = true;
         }
     }
 
