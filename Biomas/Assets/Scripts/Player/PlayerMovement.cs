@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public ParticleSystem dust;
     private float horizontal;
     public float speed = 5f;
     public float jumpingPower = 7f;
@@ -48,6 +49,9 @@ public class PlayerMovement : MonoBehaviour
             Vector3 localScale = transform.localScale;
             localScale.x *= -1f;
             transform.localScale = localScale;
+            if(IsGrounded()){
+                CreateDust();
+            }
         }
     }
 
@@ -57,5 +61,13 @@ public class PlayerMovement : MonoBehaviour
         animator.SetBool("Walk", isWalking);
     }
 
+    void CreateDust(){
+        dust.Play();
+    }
+
+    public void Death()
+    {
+        animator.SetBool("Dead", true);
+    }
     
 }
