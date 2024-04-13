@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -9,10 +10,14 @@ public class PlayerMovement : MonoBehaviour
     private bool isFacingRight = true;
     public Animator animator;
 
+    public AudioSource src;
+    public AudioClip sfx;
+    
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
 
+       
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
@@ -68,6 +73,17 @@ public class PlayerMovement : MonoBehaviour
     public void Death()
     {
         animator.SetBool("Dead", true);
+        Debug.Log("Morreu");
+        rb.bodyType = RigidbodyType2D.Static;
+        Invoke("sceneReset", 1.2f);
+        src.clip = sfx;
+        src.Play();
+        
+    }
+
+    public void sceneReset()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     
 }

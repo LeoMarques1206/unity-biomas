@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Damage : MonoBehaviour
+public class DamageWithCollider : MonoBehaviour
 {
     private PlayerMovement playerMovement;
     public GameObject player;
@@ -19,15 +19,13 @@ public class Damage : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+     void OnCollisionEnter2D(Collision2D collision)
     {
-        if(other.CompareTag("Player")) 
+        if (collision.gameObject.CompareTag("Player"))
         {
-            
             if (playerMovement != null)
             {
                 playerMovement.Death();
-                
             }
         }
     }

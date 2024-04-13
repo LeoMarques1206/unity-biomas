@@ -10,6 +10,9 @@ public class Item : MonoBehaviour
     [SerializeField]
     private Sprite sprite;
 
+    public AudioSource src;
+    public AudioClip sfx;
+
     private InventoryManager inventoryManager;
 
     // Start is called before the first frame update
@@ -24,6 +27,9 @@ public class Item : MonoBehaviour
         {
             inventoryManager.AddItem(itemName, sprite);
             Destroy(gameObject);
+            src.clip = sfx;
+            src.Play();
+        
         }
     }
 
