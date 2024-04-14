@@ -1,0 +1,288 @@
+fileFormatVersion: 2
+guid: 05f562941948cd248b4f868728455746
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 46
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Leopard Baby_5
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 317
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32ba27c37efef6b47913e944011a3cd4
+      internalID: 2076462043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Leopard Baby_6
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 317
+        width: 42
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf5cfbd0b9dd1614282aaa9e084e15e1
+      internalID: 787618398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Leopard Baby_7
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 316
+        width: 42
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 325efbcde9564584aa05f70c34c19297
+      internalID: 1290294944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Leopard Baby_8
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 316
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44892385793cd904c8bfff7653fdadb7
+      internalID: -2081694790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Leopard Baby_9
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 316
+        width: 62
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ede8594ef26290408ac0ad5255bb9bd
+      internalID: -352688929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PC Computer - Ragnarok Online - Leopard Baby_0: -1167479778
+      PC Computer - Ragnarok Online - Leopard Baby_1: -1461149566
+      PC Computer - Ragnarok Online - Leopard Baby_10: -87652371
+      PC Computer - Ragnarok Online - Leopard Baby_11: 2069577287
+      PC Computer - Ragnarok Online - Leopard Baby_12: -703038792
+      PC Computer - Ragnarok Online - Leopard Baby_13: 529247005
+      PC Computer - Ragnarok Online - Leopard Baby_14: 1849852044
+      PC Computer - Ragnarok Online - Leopard Baby_15: -1882447432
+      PC Computer - Ragnarok Online - Leopard Baby_16: -798695990
+      PC Computer - Ragnarok Online - Leopard Baby_17: 383916661
+      PC Computer - Ragnarok Online - Leopard Baby_18: 826615044
+      PC Computer - Ragnarok Online - Leopard Baby_19: -1058997760
+      PC Computer - Ragnarok Online - Leopard Baby_2: -1875441500
+      PC Computer - Ragnarok Online - Leopard Baby_20: 1002500424
+      PC Computer - Ragnarok Online - Leopard Baby_21: -966330778
+      PC Computer - Ragnarok Online - Leopard Baby_22: -1217277021
+      PC Computer - Ragnarok Online - Leopard Baby_23: 633618802
+      PC Computer - Ragnarok Online - Leopard Baby_24: 604894437
+      PC Computer - Ragnarok Online - Leopard Baby_25: 2023325967
+      PC Computer - Ragnarok Online - Leopard Baby_26: -560427085
+      PC Computer - Ragnarok Online - Leopard Baby_27: 1304198870
+      PC Computer - Ragnarok Online - Leopard Baby_28: -185650555
+      PC Computer - Ragnarok Online - Leopard Baby_29: -104593645
+      PC Computer - Ragnarok Online - Leopard Baby_3: 1151632040
+      PC Computer - Ragnarok Online - Leopard Baby_30: 332079354
+      PC Computer - Ragnarok Online - Leopard Baby_31: -784348614
+      PC Computer - Ragnarok Online - Leopard Baby_32: 728685905
+      PC Computer - Ragnarok Online - Leopard Baby_33: -793962459
+      PC Computer - Ragnarok Online - Leopard Baby_34: -1743048545
+      PC Computer - Ragnarok Online - Leopard Baby_35: -178412622
+      PC Computer - Ragnarok Online - Leopard Baby_36: 1839766828
+      PC Computer - Ragnarok Online - Leopard Baby_37: -384479449
+      PC Computer - Ragnarok Online - Leopard Baby_38: 162877882
+      PC Computer - Ragnarok Online - Leopard Baby_39: -1933217290
+      PC Computer - Ragnarok Online - Leopard Baby_4: -1373331219
+      PC Computer - Ragnarok Online - Leopard Baby_40: 2086463180
+      PC Computer - Ragnarok Online - Leopard Baby_41: -504099465
+      PC Computer - Ragnarok Online - Leopard Baby_42: -530895743
+      PC Computer - Ragnarok Online - Leopard Baby_43: 1187530421
+      PC Computer - Ragnarok Online - Leopard Baby_44: 497105710
+      PC Computer - Ragnarok Online - Leopard Baby_45: -728752392
+      PC Computer - Ragnarok Online - Leopard Baby_46: -1789692268
+      PC Computer - Ragnarok Online - Leopard Baby_47: 557046792
+      PC Computer - Ragnarok Online - Leopard Baby_48: 637538010
+      PC Computer - Ragnarok Online - Leopard Baby_49: -980637527
+      PC Computer - Ragnarok Online - Leopard Baby_5: 2076462043
+      PC Computer - Ragnarok Online - Leopard Baby_50: 981335002
+      PC Computer - Ragnarok Online - Leopard Baby_51: 1659167971
+      PC Computer - Ragnarok Online - Leopard Baby_52: 1727685033
+      PC Computer - Ragnarok Online - Leopard Baby_53: -917309926
+      PC Computer - Ragnarok Online - Leopard Baby_54: -1539725156
+      PC Computer - Ragnarok Online - Leopard Baby_55: 1005800894
+      PC Computer - Ragnarok Online - Leopard Baby_6: 787618398
+      PC Computer - Ragnarok Online - Leopard Baby_7: 1290294944
+      PC Computer - Ragnarok Online - Leopard Baby_8: -2081694790
+      PC Computer - Ragnarok Online - Leopard Baby_9: -352688929
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
