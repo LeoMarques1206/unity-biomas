@@ -1,10 +1,12 @@
 using UnityEngine;
 
-public class NPCMovement : MonoBehaviour
+public class NPCMovementPlatform : MonoBehaviour
 {
     public float moveSpeed = 3f; // Velocidade de movimento do NPC
     public float leftLimit = -5f; // Limite esquerdo
     public float rightLimit = 5f; // Limite direito
+    public GameObject player; // Referência ao jogador
+    public SpriteRenderer npcSpriteRenderer; // Referência ao SpriteRenderer da Onça_0
 
     private bool movingRight = true; // Flag para controlar a direção
 
@@ -35,12 +37,27 @@ public class NPCMovement : MonoBehaviour
         // Inverte a direção
         if (movingRight)
         {
-            transform.localScale = new Vector3(1f, 1f, 1f); // Olhando para a direita
+            npcSpriteRenderer.flipX = false; // Não vira horizontalmente
         }
         else
         {
-            transform.localScale = new Vector3(-1f, 1f, 1f); // Olhando para a esquerda
+            npcSpriteRenderer.flipX = true; // Vira horizontalmente
         }
     }
-    
+
+    void OnCollisionEnter2D(Collision2D collision)
+    { 
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            collision.transform.SetParent(transform);
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            collision.transform.SetParent(null);
+        }
+    }
 }
