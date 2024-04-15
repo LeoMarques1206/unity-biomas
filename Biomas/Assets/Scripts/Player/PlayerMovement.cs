@@ -12,14 +12,22 @@ public class PlayerMovement : MonoBehaviour
 
     public AudioSource src;
     public AudioClip sfx;
-    
+
+    public bool canMove = true; 
+
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
+    
 
-       
     void Update()
     {
+        if (!canMove)
+        {
+            rb.velocity = Vector2.zero;
+            return; 
+        } 
+
         horizontal = Input.GetAxisRaw("Horizontal");
 
         if (Input.GetButtonDown("Jump") && IsGrounded())
@@ -38,6 +46,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (!canMove) 
+        {
+            animator.SetBool("Walk", false);
+            return; 
+        }
+
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
     }
 
@@ -62,8 +76,14 @@ public class PlayerMovement : MonoBehaviour
 
     private void UpdateAnimator()
     {
-        bool isWalking = Mathf.Abs(horizontal) > 0.1f;
-        animator.SetBool("Walk", isWalking);
+        if(canMove)
+        {
+            bool isWalking = Mathf.Abs(horizontal) > 0.1f;
+            animator.SetBool("Walk", isWalking);
+        } else {
+            animator.SetBool("Walk", false);
+        }
+        
     }
 
     void CreateDust(){
@@ -72,6 +92,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Death()
     {
+        canMove = false; // Quando o jogador morre, ele não pode mais se mover
         animator.SetBool("Dead", true);
         Debug.Log("Morreu");
         rb.bodyType = RigidbodyType2D.Static;
@@ -85,5 +106,4 @@ public class PlayerMovement : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
-    
 }

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: de0e1bdeafb44184aa582f41c8db671c
+guid: 183c83e6659d4f648adbc3fa7215ac10
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,97 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: piranha_hurt_6
+      name: 16-bit-spike-Sheet_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 38
-        width: 20
-        height: 20
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2f3090a47eebd9c48bc3a0afd857e28f
-      internalID: -1446170576
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: piranha_hurt_9
-      rect:
-        serializedVersion: 2
-        x: 102
-        y: 38
-        width: 20
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e3e8574c1f9a3124bb843c0737ff14de
-      internalID: 1611863523
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: piranha_hurt_10
-      rect:
-        serializedVersion: 2
-        x: 134
-        y: 38
-        width: 20
-        height: 20
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b7e6c3a5d7a7196498ddb279ccda5753
-      internalID: -33980805
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: piranha_hurt_11
-      rect:
-        serializedVersion: 2
-        x: 166
-        y: 38
-        width: 20
-        height: 20
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b785895d99c4346449ee080bcfa53a17
-      internalID: 538316238
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: piranha_hurt_0
-      rect:
-        serializedVersion: 2
-        x: 87
-        y: 84
-        width: 11
-        height: 11
+        x: 0
+        y: 0
+        width: 16
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ee891162f3daf94ebcdfd1e88e87df0
-      internalID: 796708722
+      spriteID: cf4bf9e3e47e7a24c9a69877847f7ba5
+      internalID: 196507142
       vertices: []
       indices: 
       edges: []
@@ -225,24 +141,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      piranha_hurt_0: 796708722
-      piranha_hurt_1: -546204848
-      piranha_hurt_10: -33980805
-      piranha_hurt_11: 538316238
-      piranha_hurt_12: 1957802568
-      piranha_hurt_13: 2093990163
-      piranha_hurt_14: 1364076342
-      piranha_hurt_15: -1984925592
-      piranha_hurt_16: -488415651
-      piranha_hurt_17: 2018915917
-      piranha_hurt_2: -185733005
-      piranha_hurt_3: -763096725
-      piranha_hurt_4: 38636945
-      piranha_hurt_5: -585403614
-      piranha_hurt_6: -1446170576
-      piranha_hurt_7: -1916839520
-      piranha_hurt_8: -451365620
-      piranha_hurt_9: 1611863523
+      16-bit-spike-Sheet_0: 196507142
+      16-bit-spike-Sheet_1: 453677098
+      16-bit-spike-Sheet_2: -728546028
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
