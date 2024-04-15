@@ -10,6 +10,10 @@ public class Item : MonoBehaviour
     [SerializeField]
     private Sprite sprite;
 
+    [TextArea]
+    [SerializeField]
+    private string itemDescription;
+
     public AudioSource src;
     public AudioClip sfx;
 
@@ -25,7 +29,7 @@ public class Item : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            inventoryManager.AddItem(itemName, sprite);
+            inventoryManager.AddItem(itemName, sprite, itemDescription);
             Destroy(gameObject);
             src.clip = sfx;
             src.Play();

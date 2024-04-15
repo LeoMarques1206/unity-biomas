@@ -5,7 +5,7 @@ using UnityEngine;
 public class ActivateText : MonoBehaviour
 {
     public GameObject dialogue;
-     private Dialogue dialogueScript;
+    private Dialogue dialogueScript;
 
     void Start()
     {
@@ -30,7 +30,7 @@ public class ActivateText : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            Destroy(dialogue);
+            dialogue.SetActive(false);
         }
     }
 }

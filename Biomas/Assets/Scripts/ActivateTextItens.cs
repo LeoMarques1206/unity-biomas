@@ -5,7 +5,7 @@ using UnityEngine;
 public class ActivateTextItens : MonoBehaviour
 {
     public GameObject dialogue;
-     private Dialogue dialogueScript;
+    private Dialogue dialogueScript;
 
     void Start()
     {

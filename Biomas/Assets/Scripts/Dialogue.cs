@@ -8,11 +8,13 @@ public class Dialogue : MonoBehaviour
     public string[] lines;
     public float textSpeed = 1.5f;
     private int index;
+    private bool dialogStarted;
 
     void Start()
     {
         gameObject.SetActive(false);
         textComponent.text = string.Empty;
+        dialogStarted = false;
         //StartDialogue();
     }
 
@@ -35,13 +37,19 @@ public class Dialogue : MonoBehaviour
 
     public void StartDialogue()
     {
-        index = 0;
-        StartCoroutine(TypeLine());
+        if(!dialogStarted) 
+        {
+            index = 0;
+            dialogStarted = true;
+            StartCoroutine(TypeLine());
+        }
+        
     }
 
     IEnumerator TypeLine()
     {
-        foreach (char c in lines[index].ToCharArray()){
+        foreach (char c in lines[index].ToCharArray())
+        {
             textComponent.text += c;
             yield return new WaitForSeconds(textSpeed);
         }
