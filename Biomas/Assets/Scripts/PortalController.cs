@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PortalController : MonoBehaviour
 {
@@ -52,4 +53,13 @@ public class PortalController : MonoBehaviour
             }
         }
     }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.CompareTag("Player"))
+        {
+            SceneManager.LoadScene("IntroAmazonia");
+        }
+    }
+
 }

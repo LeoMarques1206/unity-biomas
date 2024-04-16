@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Amazonia.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/StartRoom.unity
+    guid: e968915d28811d54fb15227c5237df11
+  - enabled: 1
+    path: Assets/Scenes/IntroAmazonia.unity
+    guid: e88ab9682ee1cfd48b1dd2e0830d30fc
   m_configObjects: {}

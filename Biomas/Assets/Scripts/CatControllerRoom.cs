@@ -1,24 +1,32 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class CatController : MonoBehaviour
+public class CatControllerRoom : MonoBehaviour
 {
     public Animator catAnimator;
     public Animator playerAnimator;
     public GameObject objectToFlip;
     public GameObject Exclamation;
     public float fadeDuration = 1.0f;
+    public GameObject textBox;
+    private Dialogue dialogueScript;
+    public GameObject player;
+    private PlayerMovement playerScript;
 
+    public GameObject seta;
     void Start()
     {
+        dialogueScript = textBox.GetComponent<Dialogue>();
+        playerScript = player.GetComponent<PlayerMovement>();
         Exclamation.SetActive(false);
-
+        textBox.SetActive(false);
+        seta.SetActive(false);
+        playerScript.canMove = false;
         StartCoroutine(ActivateScaryAfterDelay(3.5f));
         StartCoroutine(FlipAfterDelay(3.8f));
         StartCoroutine(ActivateJumpAfterDelay(4.5f));
         StartCoroutine(FadeOutCatAfterDelay(5.4f));
-        StartCoroutine(SurpriseEmoteAfterDelay(6.2f));
-        StartCoroutine(SurpriseOutAfterDelay(6.6f));
     }
 
     IEnumerator ActivateScaryAfterDelay(float delay)
@@ -60,18 +68,15 @@ public class CatController : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         objectToFlip.transform.localScale = new Vector3(-objectToFlip.transform.localScale.x, objectToFlip.transform.localScale.y, objectToFlip.transform.localScale.z);
+        Invoke("SurpriseEmoteAfterDelay", 3f);
     }
 
-    IEnumerator SurpriseEmoteAfterDelay(float delay)
+    void SurpriseEmoteAfterDelay()
     {
-        yield return new WaitForSeconds(delay);
-        Exclamation.SetActive(true);
-    }
-
-    IEnumerator SurpriseOutAfterDelay(float delay)
-    {
-        yield return new WaitForSeconds(delay);
-        Exclamation.SetActive(false);
-        Debug.Log("oi");
+        //Exclamation.SetActive(true);
+        textBox.SetActive(true);
+        dialogueScript.StartDialogue();
+        playerScript.canMove = true;
+        seta.SetActive(true);
     }
 }
