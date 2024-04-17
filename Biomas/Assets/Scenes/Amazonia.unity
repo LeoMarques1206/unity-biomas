@@ -341,7 +341,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.8135697, y: 0.11495137}
+  m_Offset: {x: 1.8135697, y: 0.16223359}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -352,7 +352,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0473392, y: 1.9042966}
+  m_Size: {x: 1.0473392, y: 1.8097322}
   m_EdgeRadius: 0
 --- !u!114 &28995114
 MonoBehaviour:
@@ -490,7 +490,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.5142039, y: 0.0004749298}
+  m_Offset: {x: 1.5142039, y: 0.20142397}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -501,7 +501,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.6534078, y: 2.592166}
+  m_Size: {x: 3.6534078, y: 2.1429877}
   m_EdgeRadius: 0
 --- !u!95 &28995119
 Animator:
@@ -5942,10 +5942,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Aperte ESPACO para pular
+  m_text: "Aperte espa\xE7o para pular"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5af9fd7e3ee783c498fdb89ff73a5d59, type: 2}
-  m_sharedMaterial: {fileID: 2597416520698808364, guid: 5af9fd7e3ee783c498fdb89ff73a5d59, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: aca6791581ce2e748885adef061de6ba, type: 2}
+  m_sharedMaterial: {fileID: 5171811964323974376, guid: aca6791581ce2e748885adef061de6ba, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5975,7 +5975,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -6458,7 +6458,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1277461014}
   lines:
-  - Aperte ESPACO para pular
+  - "Aperte espa\xE7o para pular"
   textSpeed: 0.05
 --- !u!95 &198709466
 Animator:
@@ -8237,8 +8237,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Um item foi adicionado ao seu inventario (i)
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5af9fd7e3ee783c498fdb89ff73a5d59, type: 2}
-  m_sharedMaterial: {fileID: 2597416520698808364, guid: 5af9fd7e3ee783c498fdb89ff73a5d59, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: aca6791581ce2e748885adef061de6ba, type: 2}
+  m_sharedMaterial: {fileID: 5171811964323974376, guid: aca6791581ce2e748885adef061de6ba, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8268,7 +8268,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -11081,8 +11081,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Um item foi adicionado ao seu inventario (i)
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5af9fd7e3ee783c498fdb89ff73a5d59, type: 2}
-  m_sharedMaterial: {fileID: 2597416520698808364, guid: 5af9fd7e3ee783c498fdb89ff73a5d59, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: aca6791581ce2e748885adef061de6ba, type: 2}
+  m_sharedMaterial: {fileID: 5171811964323974376, guid: aca6791581ce2e748885adef061de6ba, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -11106,13 +11106,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15
-  m_fontSizeBase: 15
+  m_fontSize: 23
+  m_fontSizeBase: 23
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -11714,8 +11714,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1812444897}
   lines:
-  - Bravo! Como recompensa por passar dos desafios da amazonia, receba o Medalhao
-    do sapo. Aperte ESPACO duas vezes seguidas e chegue em distancias inimaginaveis!
+  - "Bravo! Como recompensa por passar dos desafios da amaz\xF4nia, receba o Medalh\xE3o
+    do sapo. Aperte espa\xE7o duas vezes seguidas e chegue em dist\xE2ncias inimaginaveis!"
   textSpeed: 0.05
 --- !u!114 &748838795
 MonoBehaviour:
@@ -12723,6 +12723,8 @@ GameObject:
   - component: {fileID: 807133282}
   - component: {fileID: 807133281}
   - component: {fileID: 807133280}
+  - component: {fileID: 807133284}
+  - component: {fileID: 807133283}
   m_Layer: 0
   m_Name: PortalEnd
   m_TagString: Untagged
@@ -12818,6 +12820,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &807133283
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807133279}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.74274206, y: 0.2678337}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 7, y: 14.8125}
+    newSize: {x: 0.78125, y: 1.34375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.514516, y: 12.558443}
+  m_EdgeRadius: 0
+--- !u!114 &807133284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807133279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfca224129e1a614289a82647600d16e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &835188465
 GameObject:
   m_ObjectHideFlags: 0
@@ -17998,7 +18057,7 @@ Transform:
   m_GameObject: {fileID: 867443377}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.343, z: 0}
+  m_LocalPosition: {x: 0, y: -0.274, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20662,7 +20721,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b5553f3a050be6944a0f9dd7f0604f15, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 494931fcce8501443b3dc3914865a451, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.189
   m_Pitch: 1
@@ -22037,10 +22096,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Aperte ESPACO para pular
+  m_text: "Aperte espa\xE7o para pular"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5af9fd7e3ee783c498fdb89ff73a5d59, type: 2}
-  m_sharedMaterial: {fileID: 2597416520698808364, guid: 5af9fd7e3ee783c498fdb89ff73a5d59, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: aca6791581ce2e748885adef061de6ba, type: 2}
+  m_sharedMaterial: {fileID: 5171811964323974376, guid: aca6791581ce2e748885adef061de6ba, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -22070,7 +22129,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -22320,7 +22379,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -5
+  m_SortingOrder: -6
   m_Sprite: {fileID: -1314026841, guid: 9d0e5eefb62a2574c8b48f21896bebae, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -27626,8 +27685,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Aperte ESPACO para pular
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5af9fd7e3ee783c498fdb89ff73a5d59, type: 2}
-  m_sharedMaterial: {fileID: 2597416520698808364, guid: 5af9fd7e3ee783c498fdb89ff73a5d59, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: aca6791581ce2e748885adef061de6ba, type: 2}
+  m_sharedMaterial: {fileID: 5171811964323974376, guid: aca6791581ce2e748885adef061de6ba, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -27657,7 +27716,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -28804,7 +28863,7 @@ Transform:
   m_GameObject: {fileID: 1896114571}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 37.03208, y: 5.17, z: -0.020153208}
+  m_LocalPosition: {x: 36.978, y: 5.17, z: -0.020153208}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -30723,7 +30782,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.5142039, y: 0.0004749298}
+  m_Offset: {x: 1.5142039, y: -0.03958422}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -30734,7 +30793,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.6534078, y: 2.592166}
+  m_Size: {x: 3.6534078, y: 2.3785172}
   m_EdgeRadius: 0
 --- !u!114 &1924043111
 MonoBehaviour:
@@ -31837,8 +31896,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 2075362947}
   lines:
-  - 'Bem vindo a amazonia! Aprecie de perto a beleza deste bioma, mas tenha cuidado
-    com as piranhas e as cobras, elas podem te machucar!  '
+  - "Bem-vindo \xE0 Amaz\xF4nia! Aprecie de perto a beleza deste bioma, mas tenha
+    cuidado com as piranhas e as cobras, elas podem te machucar!"
   textSpeed: 0.05
 --- !u!114 &2031687735
 MonoBehaviour:
@@ -32456,8 +32515,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Aperte ESPACO para pular
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5af9fd7e3ee783c498fdb89ff73a5d59, type: 2}
-  m_sharedMaterial: {fileID: 2597416520698808364, guid: 5af9fd7e3ee783c498fdb89ff73a5d59, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: aca6791581ce2e748885adef061de6ba, type: 2}
+  m_sharedMaterial: {fileID: 5171811964323974376, guid: aca6791581ce2e748885adef061de6ba, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -32481,13 +32540,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -33038,8 +33097,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Aperte ESPACO para pular
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5af9fd7e3ee783c498fdb89ff73a5d59, type: 2}
-  m_sharedMaterial: {fileID: 2597416520698808364, guid: 5af9fd7e3ee783c498fdb89ff73a5d59, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: aca6791581ce2e748885adef061de6ba, type: 2}
+  m_sharedMaterial: {fileID: 5171811964323974376, guid: aca6791581ce2e748885adef061de6ba, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -33069,7 +33128,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535

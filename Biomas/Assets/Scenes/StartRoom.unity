@@ -341,7 +341,7 @@ GameObject:
   m_Component:
   - component: {fileID: 99022141}
   - component: {fileID: 99022140}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -887,8 +887,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dust: {fileID: 1697813749}
-  speed: 4
-  jumpingPower: 5
+  speed: 5
+  jumpingPower: 0
   animator: {fileID: 1350775947}
   src: {fileID: 0}
   sfx: {fileID: 8300000, guid: 13fef59ec54a55a42ba16b257758dedd, type: 3}
