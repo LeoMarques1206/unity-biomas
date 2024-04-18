@@ -10403,6 +10403,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: {fileID: 198709461}
+  timePass: 100
+  player: {fileID: 996941754}
 --- !u!1 &576097960
 GameObject:
   m_ObjectHideFlags: 0
@@ -11922,6 +11924,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: {fileID: 2031687730}
+  timePass: 325
+  player: {fileID: 996941754}
 --- !u!114 &749261774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19510,6 +19514,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: {fileID: 748838790}
+  timePass: 425
+  player: {fileID: 996941754}
 --- !u!1 &1018942262
 GameObject:
   m_ObjectHideFlags: 0

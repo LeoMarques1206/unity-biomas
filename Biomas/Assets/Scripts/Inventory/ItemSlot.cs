@@ -69,7 +69,10 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
         thisItemSelected = true;
         ItemDescriptionNameText.text = itemName;
         ItemDescriptionText.text = itemDescription;
+        if(itemSprite != null)
+        {
         itemDescriptionImage.sprite = itemSprite;
+        }
     }
 
     public void OnRightClick() 

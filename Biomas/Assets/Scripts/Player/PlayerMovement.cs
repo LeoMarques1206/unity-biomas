@@ -9,29 +9,40 @@ public class PlayerMovement : MonoBehaviour
     public float jumpingPower = 7f;
     private bool isFacingRight = true;
     public Animator animator;
+    public bool MedalhaoSapo = false;
 
     public AudioSource src;
     public AudioClip sfx;
 
-    public bool canMove = true; 
+    public bool canMove = true;
+
+    private int remainingJumps = 2; // Contador para pulos restantes
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
-    
+
 
     void Update()
     {
         if (!canMove)
         {
             rb.velocity = Vector2.zero;
-            return; 
-        } 
+            return;
+        }
 
         horizontal = Input.GetAxisRaw("Horizontal");
 
-        if (Input.GetButtonDown("Jump") && IsGrounded())
+        if (Input.GetButtonDown("Jump") && (IsGrounded() || (remainingJumps > 0 && MedalhaoSapo)))
         {
+            if (IsGrounded())
+            {
+                remainingJumps = 1; // Se estiver no chão, resete os pulos restantes para 1
+            }
+            else if (MedalhaoSapo)
+            {
+                remainingJumps--; // Se não estiver no chão e tiver o medalhão do sapo, use um pulo restante
+            }
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
         }
 
@@ -46,10 +57,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!canMove) 
+        if (!canMove)
         {
             animator.SetBool("Walk", false);
-            return; 
+            return;
         }
 
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
@@ -68,7 +79,8 @@ public class PlayerMovement : MonoBehaviour
             Vector3 localScale = transform.localScale;
             localScale.x *= -1f;
             transform.localScale = localScale;
-            if(IsGrounded()){
+            if (IsGrounded())
+            {
                 CreateDust();
             }
         }
@@ -76,17 +88,20 @@ public class PlayerMovement : MonoBehaviour
 
     private void UpdateAnimator()
     {
-        if(canMove)
+        if (canMove)
         {
             bool isWalking = Mathf.Abs(horizontal) > 0.1f;
             animator.SetBool("Walk", isWalking);
-        } else {
+        }
+        else
+        {
             animator.SetBool("Walk", false);
         }
-        
+
     }
 
-    void CreateDust(){
+    void CreateDust()
+    {
         dust.Play();
     }
 
@@ -99,7 +114,7 @@ public class PlayerMovement : MonoBehaviour
         Invoke("sceneReset", 1.2f);
         src.clip = sfx;
         src.Play();
-        
+
     }
 
     public void sceneReset()
