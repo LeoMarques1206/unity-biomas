@@ -7,6 +7,7 @@ public class Damage : MonoBehaviour
     private PlayerMovement playerMovement;
     public GameObject player;
 
+    private int testBranch;
 
     void Start()
     {
