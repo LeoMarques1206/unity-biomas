@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,6 +16,7 @@ public class DetectWally : MonoBehaviour
     public GameObject dialogue2;
     private Dialogue dialogueScript2;
     public GameObject Wally;
+    private bool flagWally;
 
     public float speed = 5f; // Velocidade de movimento
     public Vector2 direction = new Vector2(1, 1); // Direção de movimento
@@ -44,13 +46,14 @@ public class DetectWally : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("Player"))
+        if(other.CompareTag("Player") && !flagWally)
         {
             dialogueScript.gameObject.SetActive(true);
             dialogueScript.StartDialogue();
             playerMovement.canMove = false;
             Invoke("MoveWally", 2f);
             Invoke("DestroyBox", 5f);
+            flagWally = true;
         }
     }
 

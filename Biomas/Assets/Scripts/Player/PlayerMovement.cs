@@ -112,8 +112,8 @@ public class PlayerMovement : MonoBehaviour
         Debug.Log("Morreu");
         Invoke("StaticBody", 0.2f);
         Invoke("sceneReset", 1.2f);
-        src.clip = sfx;
-        src.Play();
+        // src.clip = sfx;
+        // src.Play();
 
     }
 

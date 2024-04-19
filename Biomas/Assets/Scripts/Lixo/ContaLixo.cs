@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class ContaLixo : MonoBehaviour
 {
-    public float numLixo = 0;
-    public float lixoTotal;
+    public int numLixo = 0;
+    public int lixoTotal;
 
     void Start()
     {

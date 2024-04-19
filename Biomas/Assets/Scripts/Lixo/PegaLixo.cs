@@ -1,12 +1,14 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data.Common;
 using UnityEngine;
 
 public class PegaLixo : MonoBehaviour
 {
     public GameObject key;
     public GameObject lixo;
-    private bool pegou = false;
+    private String lixoNome;
     public ContaLixo contaLixo;
     public GameObject lixoManagement;
     private bool apertou = false;
@@ -19,20 +21,22 @@ public class PegaLixo : MonoBehaviour
 
     void Update()
     {
+        apertou = false;
+
         if(Input.GetButtonDown("Submit"))
         {
             Debug.Log("Apertou");
             apertou = true;
-        }
-        if (apertou)
+            Debug.Log("Nome do item: " + lixoNome);
+        } 
+        if (apertou && lixoNome == lixo.name)
             {
-                pegou = true;
                 Debug.Log("PegouLixo");
-                lixo.SetActive(false);
-                key.SetActive(false);
+                Destroy(gameObject);
+                Destroy(key);
                 contaLixo.numLixo++; // Incrementa o número de lixos
             }
-        Debug.Log(contaLixo.numLixo);
+        // Debug.Log(contaLixo.numLixo);
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -41,7 +45,8 @@ public class PegaLixo : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             key.SetActive(true);
-            
+            lixoNome = lixo.name;
+            Debug.Log(lixoNome);
         }
     }
 
@@ -50,6 +55,7 @@ public class PegaLixo : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             key.SetActive(false);
+            lixoNome = null;
         }
     }
 }
