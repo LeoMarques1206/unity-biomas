@@ -890,6 +890,7 @@ MonoBehaviour:
   speed: 5
   jumpingPower: 0
   animator: {fileID: 1350775947}
+  MedalhaoSapo: 0
   src: {fileID: 0}
   sfx: {fileID: 8300000, guid: 13fef59ec54a55a42ba16b257758dedd, type: 3}
   canMove: 1
@@ -1334,7 +1335,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 1cd1ad2df6eb5ac4e811b5c22a3262d5, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.194
+  m_Volume: 0.189
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -6638,7 +6639,7 @@ Transform:
   m_GameObject: {fileID: 1922025230}
   serializedVersion: 2
   m_LocalRotation: {x: -0.008727774, y: 0, z: -0, w: 0.9999619}
-  m_LocalPosition: {x: 4.6191, y: -3.61, z: 0}
+  m_LocalPosition: {x: 4.6191, y: -3.59, z: 0}
   m_LocalScale: {x: 0.7897017, y: 0.80534536, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
