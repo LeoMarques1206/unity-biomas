@@ -13,6 +13,9 @@ public class PegaLixo : MonoBehaviour
     public GameObject lixoManagement;
     private bool apertou = false;
 
+    public AudioSource src;
+    public AudioClip sfx;
+
     void Start()
     {
         contaLixo = lixoManagement.GetComponent<ContaLixo>();
@@ -31,6 +34,8 @@ public class PegaLixo : MonoBehaviour
         } 
         if (apertou && lixoNome == lixo.name)
             {
+                src.clip = sfx;
+                src.Play();
                 Debug.Log("PegouLixo");
                 Destroy(gameObject);
                 Destroy(key);
