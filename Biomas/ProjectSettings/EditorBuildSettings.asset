@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Caatinga.unity
     guid: 09f54a26a5322ad4c865571ab32e8350
+  - enabled: 1
+    path: Assets/Scenes/IntroCaatinga.unity
+    guid: a4cacee9e3a7d284d9ddc3f52355274a
   m_configObjects: {}

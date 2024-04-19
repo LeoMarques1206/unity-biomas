@@ -4,9 +4,11 @@ using UnityEngine.SceneManagement;
 
 public class IntroManager : MonoBehaviour
 {
+    public string scene;
     public TextMeshProUGUI textComponent;
     public AudioSource src;
     public AudioClip sfx;
+    public GameObject background;
 
     public AudioSource src2;
     public AudioClip bird;
@@ -20,6 +22,7 @@ public class IntroManager : MonoBehaviour
     void ShowText()
     {
         SetTextOpacity(1f); // Define a opacidade como 100% (1)
+        background.SetActive(true);
         if (src != null && sfx != null)
         {
             src.clip = sfx;
@@ -38,7 +41,7 @@ public class IntroManager : MonoBehaviour
 
     void SceneExit()
     {
-        SceneManager.LoadScene("Amazonia");
+        SceneManager.LoadScene(scene);
     }
         
     void SetTextOpacity(float opacity)

@@ -10,7 +10,7 @@ public class FlyTrigger : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("Player"))
+        if(other.CompareTag("Player") || other.CompareTag("Calango"))
         {
             birdAnimator.SetBool("Fly", true);
             birdAnimator2.SetBool("Fly", true);

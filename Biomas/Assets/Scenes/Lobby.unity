@@ -9218,7 +9218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfca224129e1a614289a82647600d16e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cenaParaInstanciar: Caatinga
+  cenaParaInstanciar: IntroCaatinga
 --- !u!1001 &1783303056
 PrefabInstance:
   m_ObjectHideFlags: 0

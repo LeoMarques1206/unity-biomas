@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: eac76808e72d8584eb42dd1b0ecd9e55
+guid: afd1dfe488f6e784b8472a4624242598
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Guia_0
+      name: pixil-frame-0_2_0
       rect:
         serializedVersion: 2
         x: 75
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3797459337af004c89dfa23f6dc9000
-      internalID: -161204679
+      spriteID: c83005b2d6285cb4e9f68469082fca5b
+      internalID: -854747065
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guia_1
+      name: pixil-frame-0_2_1
       rect:
         serializedVersion: 2
         x: 99
         y: 74
         width: 11
-        height: 19
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,8 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c164e7dbef629b5409e431dce8d97ed3
-      internalID: 1470734140
+      spriteID: 984bbf56107e558449f5a103c2b39adf
+      internalID: 343919004
       vertices: []
       indices: 
       edges: []
@@ -162,8 +162,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Guia_0: -161204679
-      Guia_1: 1470734140
+      pixil-frame-0_2_0: -854747065
+      pixil-frame-0_2_1: 343919004
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

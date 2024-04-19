@@ -110,11 +110,16 @@ public class PlayerMovement : MonoBehaviour
         canMove = false; // Quando o jogador morre, ele não pode mais se mover
         animator.SetBool("Dead", true);
         Debug.Log("Morreu");
-        rb.bodyType = RigidbodyType2D.Static;
+        Invoke("StaticBody", 0.2f);
         Invoke("sceneReset", 1.2f);
         src.clip = sfx;
         src.Play();
 
+    }
+
+    public void StaticBody()
+    {
+        rb.bodyType = RigidbodyType2D.Static;
     }
 
     public void sceneReset()

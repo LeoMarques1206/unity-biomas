@@ -45,19 +45,19 @@ public class NPCMovementPlatform : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
-    { 
-        if (collision.gameObject.CompareTag("Player"))
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
         {
-            collision.transform.SetParent(transform);
+            other.transform.SetParent(transform);
         }
     }
 
-    void OnCollisionExit2D(Collision2D collision)
+    void OnTriggerExit2D(Collider2D other)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
-            collision.transform.SetParent(null);
+            other.transform.SetParent(null);
         }
     }
 }
