@@ -6,16 +6,13 @@ public class ContaLixo : MonoBehaviour
 {
     public int numLixo = 0;
     public int lixoTotal;
-
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    public GameObject portalFinal;
     void Update()
     {
-        
+        if(numLixo == 3)
+        {
+            portalFinal.SetActive(true);
+        }
     }
 }
 

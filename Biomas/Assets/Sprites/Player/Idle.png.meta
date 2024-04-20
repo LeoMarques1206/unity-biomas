@@ -151,6 +151,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Idle_0
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 120
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa3ee1e6df720ed49b4da4d9d511d123
+      internalID: 223872878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -204,6 +225,7 @@ TextureImporter:
       AnimationSheet_7: 1553931672
       AnimationSheet_8: 234115694
       AnimationSheet_9: 1723667405
+      Idle_0: 223872878
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

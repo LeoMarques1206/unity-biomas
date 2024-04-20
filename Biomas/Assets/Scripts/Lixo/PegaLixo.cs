@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Data.Common;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PegaLixo : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class PegaLixo : MonoBehaviour
     public ContaLixo contaLixo;
     public GameObject lixoManagement;
     private bool apertou = false;
+    public Image imageLixo;
 
     public AudioSource src;
     public AudioClip sfx;
@@ -40,6 +42,7 @@ public class PegaLixo : MonoBehaviour
                 Destroy(gameObject);
                 Destroy(key);
                 contaLixo.numLixo++; // Incrementa o número de lixos
+                imageLixo.color = Color.white;
             }
         // Debug.Log(contaLixo.numLixo);
     }
