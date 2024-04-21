@@ -10,6 +10,7 @@ public class Dialogue : MonoBehaviour
     private int index;
     private bool dialogStarted;
 
+
     void Start()
     {
         gameObject.SetActive(false);

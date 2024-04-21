@@ -71,7 +71,6 @@ public class DetectWally : MonoBehaviour
         animator.SetBool("fly", true);
         podeVoar = true;
         Invoke("DestroyBox2" , 1.5f);
-        
     }
 
     public void DestroyBox()

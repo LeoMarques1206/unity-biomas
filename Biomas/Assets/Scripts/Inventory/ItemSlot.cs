@@ -18,7 +18,7 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
 
     //INICIO DO SLOT DO ITEM
     [SerializeField]
-    private Image itemImage;
+    public Image itemImage;
 
     public GameObject selectedShader;
     public bool thisItemSelected;
@@ -33,11 +33,11 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
 
     private InventoryManager inventoryManager;
 
-    public void Start() 
+    public void Start()
     {
         inventoryManager = GameObject.Find("InventoryCanvas").GetComponent<InventoryManager>();
     }
-    
+
     public void AddItem(string itemName, Sprite itemSprite, string itemDescription)
     {
         this.itemName = itemName;
@@ -45,18 +45,17 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
         this.itemDescription = itemDescription;
         isFull = true;
 
-        itemImage.enabled = true;
-        itemImage.sprite = itemSprite;
+        UpdateUI();
     }
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if(eventData.button == PointerEventData.InputButton.Left)
+        if (eventData.button == PointerEventData.InputButton.Left)
         {
             OnLeftClick();
         }
 
-        if(eventData.button == PointerEventData.InputButton.Right)
+        if (eventData.button == PointerEventData.InputButton.Right)
         {
             OnRightClick();
         }
@@ -69,14 +68,27 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
         thisItemSelected = true;
         ItemDescriptionNameText.text = itemName;
         ItemDescriptionText.text = itemDescription;
-        if(itemSprite != null)
+        if (itemSprite != null)
         {
-        itemDescriptionImage.sprite = itemSprite;
+            itemDescriptionImage.sprite = itemSprite;
         }
     }
 
-    public void OnRightClick() 
+    public void OnRightClick()
     {
 
+    }
+
+    public void UpdateUI()
+    {
+        itemImage.sprite = itemSprite;
+        itemImage.enabled = isFull;
+        ItemDescriptionNameText.text = itemName;
+        ItemDescriptionText.text = itemDescription;
+
+        if (itemSprite != null)
+        {
+            itemDescriptionImage.sprite = itemSprite;
+        }
     }
 }

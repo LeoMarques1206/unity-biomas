@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
     private bool isFacingRight = true;
     public Animator animator;
     public bool MedalhaoSapo = false;
+    public bool MedalhaoCobra = false;
+
 
     public AudioSource src;
     public AudioClip sfx;
@@ -22,9 +24,13 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
 
+    void Start() 
+    {
+        LoadSkillsData();
+    }
 
     void Update()
-    {
+    {            
         if (!canMove)
         {
             rb.velocity = Vector2.zero;
@@ -51,21 +57,21 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
         }
 
-        
-        if(Input.GetButtonDown("Fire1")) //TESTANDO O DASH (MUDAR DEPOIS) (22:42 - 20/04)
+
+        if (Input.GetButtonDown("Fire1")) //TESTANDO O DASH (MUDAR DEPOIS) (22:42 - 20/04)
         {
-            animator.SetBool("Dash",true);
-            Invoke("testeDash",0.1f);
+            animator.SetBool("Dash", true);
+            Invoke("testeDash", 0.1f);
         }
-        
 
         Flip();
         UpdateAnimator();
     }
 
-    void testeDash(){ //testando dash (mudar depois)
-        animator.SetBool("Dash",false);
-       }
+    void testeDash()
+    { //testando dash (mudar depois)
+        animator.SetBool("Dash", false);
+    }
 
     private void FixedUpdate()
     {
@@ -137,5 +143,30 @@ public class PlayerMovement : MonoBehaviour
     public void sceneReset()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void saveSkillsData(int medalhao) 
+    {
+        if(medalhao == 1)
+        {
+            PlayerPrefs.SetInt("SkillSapo", 1);
+        } 
+        else if(medalhao == 2)
+        {
+            PlayerPrefs.SetInt("SkillCobra", 1);
+        }
+    }
+
+    public void LoadSkillsData()
+    {
+        if(PlayerPrefs.GetInt("SkillSapo") == 1)
+        {
+            MedalhaoSapo = true;
+        }
+
+        if(PlayerPrefs.GetInt("SkillCobra") == 1)
+        {
+            MedalhaoCobra = true;
+        }
     }
 }
