@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Dash
+  m_Name: ArmadilloNormal
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,7 +21,15 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -1581555600, guid: 359e041b31d63da44a0c65b00ec028a5, type: 3}
+      value: {fileID: 354568221, guid: 8a346fd9b5871774f83403b4f61e1ef1, type: 3}
+    - time: 0.16666667
+      value: {fileID: 490093147, guid: 8a346fd9b5871774f83403b4f61e1ef1, type: 3}
+    - time: 0.33333334
+      value: {fileID: 710246954, guid: 8a346fd9b5871774f83403b4f61e1ef1, type: 3}
+    - time: 0.5
+      value: {fileID: -1929734188, guid: 8a346fd9b5871774f83403b4f61e1ef1, type: 3}
+    - time: 0.6666667
+      value: {fileID: -1120028776, guid: 8a346fd9b5871774f83403b4f61e1ef1, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -44,18 +52,22 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -1581555600, guid: 359e041b31d63da44a0c65b00ec028a5, type: 3}
+    - {fileID: 354568221, guid: 8a346fd9b5871774f83403b4f61e1ef1, type: 3}
+    - {fileID: 490093147, guid: 8a346fd9b5871774f83403b4f61e1ef1, type: 3}
+    - {fileID: 710246954, guid: 8a346fd9b5871774f83403b4f61e1ef1, type: 3}
+    - {fileID: -1929734188, guid: 8a346fd9b5871774f83403b4f61e1ef1, type: 3}
+    - {fileID: -1120028776, guid: 8a346fd9b5871774f83403b4f61e1ef1, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.016666668
+    m_StopTime: 0.68333334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
     m_HasAdditiveReferencePose: 0
-    m_LoopTime: 0
+    m_LoopTime: 1
     m_LoopBlend: 0
     m_LoopBlendOrientation: 0
     m_LoopBlendPositionY: 0

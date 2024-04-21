@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -9,8 +10,17 @@ public class PlayerMovement : MonoBehaviour
     public float jumpingPower = 7f;
     private bool isFacingRight = true;
     public Animator animator;
+
+    //Medalhoes
     public bool MedalhaoSapo = false;
     public bool MedalhaoCobra = false;
+
+    //Dash
+    public bool canDash = true;
+    private bool isDashing;
+    public float dashingPower = 2f;
+    public float dashingTime = 0.2f;
+    private float dashingCooldown = 0.5f;
 
 
     public AudioSource src;
@@ -23,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
-
+    [SerializeField] private TrailRenderer tr;
     void Start() 
     {
         LoadSkillsData();
@@ -31,6 +41,11 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {            
+        if(isDashing)
+        {
+            return;
+        }
+
         if (!canMove)
         {
             rb.velocity = Vector2.zero;
@@ -57,21 +72,15 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
         }
 
-
-        if (Input.GetButtonDown("Fire1")) //TESTANDO O DASH (MUDAR DEPOIS) (22:42 - 20/04)
+        if(Input.GetButtonDown("Dash") && canDash)
         {
-            animator.SetBool("Dash", true);
-            Invoke("testeDash", 0.1f);
+            StartCoroutine(Dash());
         }
 
         Flip();
         UpdateAnimator();
     }
 
-    void testeDash()
-    { //testando dash (mudar depois)
-        animator.SetBool("Dash", false);
-    }
 
     private void FixedUpdate()
     {
@@ -80,6 +89,16 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("Walk", false);
             return;
         }
+
+        if(isDashing)
+        {
+            animator.SetBool("Dash", true);
+            return;
+        }else
+        {
+            animator.SetBool("Dash", false); 
+        }
+        
 
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
     }
@@ -168,5 +187,21 @@ public class PlayerMovement : MonoBehaviour
         {
             MedalhaoCobra = true;
         }
+    }
+
+    private IEnumerator Dash()
+    {
+        canDash = false;
+        isDashing = true;
+        float originalGravity = rb.gravityScale;
+        rb.gravityScale = 0f;
+        rb.velocity = new Vector2(transform.localScale.x * dashingPower, 0f);
+        tr.emitting = true;
+        yield return new WaitForSeconds(dashingTime);
+        tr.emitting = false;
+        rb.gravityScale = originalGravity;
+        isDashing = false;
+        yield return new WaitForSeconds(dashingCooldown);
+        canDash = true;
     }
 }
