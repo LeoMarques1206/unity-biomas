@@ -51,9 +51,21 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
         }
 
+        
+        if(Input.GetButtonDown("Fire1")) //TESTANDO O DASH (MUDAR DEPOIS) (22:42 - 20/04)
+        {
+            animator.SetBool("Dash",true);
+            Invoke("testeDash",0.1f);
+        }
+        
+
         Flip();
         UpdateAnimator();
     }
+
+    void testeDash(){ //testando dash (mudar depois)
+        animator.SetBool("Dash",false);
+       }
 
     private void FixedUpdate()
     {
