@@ -11,6 +11,10 @@ public class PlayerMovement : MonoBehaviour
     private bool isFacingRight = true;
     public Animator animator;
 
+    //Death
+    public Transform respawnPoint;
+    public SpriteRenderer deadFadeRenderer;
+
     //Medalhoes
     public bool MedalhaoSapo = false;
     public bool MedalhaoCobra = false;
@@ -41,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {            
-        Debug.Log(rb.velocity.y);
+        //Debug.Log(rb.velocity.y);
         if(isDashing)
         {
             return;
@@ -168,19 +172,54 @@ public class PlayerMovement : MonoBehaviour
 
     public void Death()
     {
-        canMove = false; // Quando o jogador morre, ele não pode mais se mover
+        canMove = false;
         animator.SetBool("Dead", true);
         Debug.Log("Morreu");
-        Invoke("StaticBody", 0.2f);
-        Invoke("sceneReset", 1.2f);
-        // src.clip = sfx;
-        // src.Play();
+        //Invoke("StaticBody", 0.2f);
+        Invoke("RespawnPlayer", 0.7f);
 
+        // Iniciar o fade in
+        StartFadeIn();
     }
 
-    public void StaticBody()
+    public void RespawnPlayer()
     {
-        rb.bodyType = RigidbodyType2D.Static;
+        transform.position = respawnPoint.position;
+        rb.velocity = Vector2.zero;
+        canMove = true;
+        animator.SetBool("Dead", false);
+        rb.bodyType = RigidbodyType2D.Dynamic;
+
+        // Iniciar o fade out
+        StartFadeOut();
+    }
+
+    void StartFadeIn()
+    {
+        StartCoroutine(Fade(deadFadeRenderer, 0f, 1f, 0.2f));
+    }
+
+    void StartFadeOut()
+    {
+        StartCoroutine(Fade(deadFadeRenderer, 1f, 0f, 0.2f));
+    }
+
+    IEnumerator Fade(SpriteRenderer renderer, float startAlpha, float endAlpha, float duration)
+    {
+        Color color = renderer.color;
+        float elapsedTime = 0f;
+
+        while (elapsedTime < duration)
+        {
+            elapsedTime += Time.deltaTime;
+            float t = Mathf.Clamp01(elapsedTime / duration);
+            color.a = Mathf.Lerp(startAlpha, endAlpha, t);
+            renderer.color = color;
+            yield return null;
+        }
+
+        color.a = endAlpha;
+        renderer.color = color;
     }
 
     public void sceneReset()
