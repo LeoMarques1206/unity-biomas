@@ -41,6 +41,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {            
+        Debug.Log(rb.velocity.y);
         if(isDashing)
         {
             return;
@@ -77,10 +78,33 @@ public class PlayerMovement : MonoBehaviour
             StartCoroutine(Dash());
         }
 
+        if(rb.velocity.y > 0)
+        {
+            animator.SetBool("Jump", true);
+        }
+
+        if(rb.velocity.y < 0)
+        {
+            animator.SetBool("Jump", false);
+            animator.SetBool("Fall", true);
+        }
+
+        if(rb.velocity.y == 0)
+        {
+            animator.SetBool("Fall", false);
+        }
+
+        if(IsGrounded())
+        {
+            animator.SetBool("Jump", false);
+            animator.SetBool("Fall", false);
+        }
+
         Flip();
         UpdateAnimator();
     }
 
+    
 
     private void FixedUpdate()
     {

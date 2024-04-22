@@ -14,6 +14,9 @@ public class Skill : MonoBehaviour
     [SerializeField]
     private string skillDescription;
 
+    public GameObject player;
+    private PlayerMovement playerMovement;
+
     // public AudioSource src;
     // public AudioClip sfx;
 
@@ -22,12 +25,15 @@ public class Skill : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        playerMovement = player.GetComponent<PlayerMovement>();
         inventoryManager = GameObject.Find("Player").transform.Find("InventoryCanvas").GetComponent<InventoryManager>();
     }
 
     public void GiveItem()
     {
-        inventoryManager.AddSkill(skillName, sprite, skillDescription);
+        if(playerMovement.MedalhaoSapo == false)
+        {
+            inventoryManager.AddSkill(skillName, sprite, skillDescription);
+        }
     }
-
 }

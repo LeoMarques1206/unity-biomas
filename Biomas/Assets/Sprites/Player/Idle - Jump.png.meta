@@ -155,8 +155,29 @@ TextureImporter:
       name: Idle_0
       rect:
         serializedVersion: 2
-        x: 175
-        y: 120
+        x: 55
+        y: 49
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa3ee1e6df720ed49b4da4d9d511d123
+      internalID: 223872878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle - Jump_0
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 51
         width: 10
         height: 17
       alignment: 0
@@ -166,8 +187,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa3ee1e6df720ed49b4da4d9d511d123
-      internalID: 223872878
+      spriteID: 6d654576e4ecec34bbc3bbe1f3af00ea
+      internalID: -651878320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle - Jump_1
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 49
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d646eab7ce0a43c4f96fdcda454676e9
+      internalID: 786803954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle - Jump_2
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 48
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 811f879215921d04191fe5dddb5c574e
+      internalID: 1574841545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle - Jump_3
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 48
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66f35daa9d5f21a4ab95abaa43c049fa
+      internalID: 1398872137
       vertices: []
       indices: 
       edges: []
@@ -225,6 +309,10 @@ TextureImporter:
       AnimationSheet_7: 1553931672
       AnimationSheet_8: 234115694
       AnimationSheet_9: 1723667405
+      Idle - Jump_0: -651878320
+      Idle - Jump_1: 786803954
+      Idle - Jump_2: 1574841545
+      Idle - Jump_3: 1398872137
       Idle_0: 223872878
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0

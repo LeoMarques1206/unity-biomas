@@ -38,8 +38,11 @@ public class GuiaMedalhao : MonoBehaviour
     }
 
     public void Load()  
-    {
-        playerSkills.LoadSkillsData();
+    {   
+        if(playerSkills.MedalhaoSapo == false){
+            playerSkills.LoadSkillsData();
+        }
+        
     }
 
     public void OnTriggerExit2D(Collider2D other)
