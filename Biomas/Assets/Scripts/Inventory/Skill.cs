@@ -35,5 +35,10 @@ public class Skill : MonoBehaviour
         {
             inventoryManager.AddSkill(skillName, sprite, skillDescription);
         }
+        
+        if(playerMovement.MedalhaoCobra == false)
+        {
+            inventoryManager.AddSkill(skillName, sprite, skillDescription);
+        }
     }
 }

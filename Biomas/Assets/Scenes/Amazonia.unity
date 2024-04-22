@@ -8309,13 +8309,13 @@ MonoBehaviour:
   animator: {fileID: 308563411}
   respawnPoint: {fileID: 998165381}
   deadFadeRenderer: {fileID: 2046998518}
-  MedalhaoSapo: 1
+  MedalhaoSapo: 0
   MedalhaoCobra: 0
   canDash: 1
   dashingPower: 5
   dashingTime: 0.2
   src: {fileID: 0}
-  sfx: {fileID: 8300000, guid: 13fef59ec54a55a42ba16b257758dedd, type: 3}
+  sfx: {fileID: 8300000, guid: f4c4a618ed62d4d4c8b79581876193f2, type: 3}
   canMove: 1
   rb: {fileID: 308563414}
   groundCheck: {fileID: 978567245}
@@ -15408,6 +15408,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: {fileID: 1561940618}
+  src: {fileID: 0}
+  sfx: {fileID: 0}
 --- !u!1 &800282055
 GameObject:
   m_ObjectHideFlags: 0
@@ -16448,7 +16450,7 @@ Transform:
   m_GameObject: {fileID: 927852990}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.01, y: -0.023, z: -0.005634382}
+  m_LocalPosition: {x: -0.039, y: -0.023, z: -0.005634382}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16495,7 +16497,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 166e1e03dc4d9b9488f9b1d06b0e8340, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 68a9322e469e5e14c860a568746b473e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -17325,6 +17327,7 @@ GameObject:
   - component: {fileID: 1016785563}
   - component: {fileID: 1016785567}
   - component: {fileID: 1016785568}
+  - component: {fileID: 1016785569}
   m_Layer: 0
   m_Name: Guia (1)
   m_TagString: Player
@@ -17495,6 +17498,21 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: bc726ebee543e78439c09f897baa1ebf, type: 3}
   skillDescription: "Permite o jogador a pular duas vezes em sequ\xEAncia"
   player: {fileID: 308563409}
+--- !u!114 &1016785569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016785562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4040236ff5e973442b28e875878b7ea9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: {fileID: 1555388912}
+  src: {fileID: 574757061}
+  sfx: {fileID: 8300000, guid: e720dab6bc7b4204c8fdc3ad247e6890, type: 3}
 --- !u!1 &1029471367
 GameObject:
   m_ObjectHideFlags: 0
@@ -18554,6 +18572,8 @@ GameObject:
   - component: {fileID: 1107640349}
   - component: {fileID: 1107640348}
   - component: {fileID: 1107640347}
+  - component: {fileID: 1107640351}
+  - component: {fileID: 1107640352}
   m_Layer: 0
   m_Name: Item
   m_TagString: Untagged
@@ -18573,11 +18593,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d24af607d75812148afb89ff701991d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: Leite
-  sprite: {fileID: 21300000, guid: 166e1e03dc4d9b9488f9b1d06b0e8340, type: 3}
-  itemDescription: "Faz violeta ter mem\xF3rias afetivas de casa"
-  src: {fileID: 574757061}
-  sfx: {fileID: 8300000, guid: e720dab6bc7b4204c8fdc3ad247e6890, type: 3}
+  itemName: Peixe
+  sprite: {fileID: 21300000, guid: 68a9322e469e5e14c860a568746b473e, type: 3}
+  itemDescription: A comida favorita de Violeta.
 --- !u!50 &1107640348
 Rigidbody2D:
   serializedVersion: 4
@@ -18666,6 +18684,35 @@ Transform:
   - {fileID: 927852991}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1107640351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107640346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a7e77e183821984e9aee4a1c9699284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatDistance: 0.2
+  floatSpeed: 0.1
+--- !u!114 &1107640352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107640346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4040236ff5e973442b28e875878b7ea9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: {fileID: 1561940618}
+  src: {fileID: 574757061}
+  sfx: {fileID: 8300000, guid: e720dab6bc7b4204c8fdc3ad247e6890, type: 3}
 --- !u!1 &1109959195
 GameObject:
   m_ObjectHideFlags: 0
@@ -24075,7 +24122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 653823064}
   lines:
-  - Um mdealhao foi adicionado ao seu inventario (I)
+  - "Um medalh\xE3o foi adicionado ao seu invent\xE1rio (I)"
   textSpeed: 0.05
 --- !u!114 &1555388917
 MonoBehaviour:

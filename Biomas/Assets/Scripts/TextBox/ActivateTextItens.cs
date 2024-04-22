@@ -7,6 +7,9 @@ public class ActivateTextItens : MonoBehaviour
     public GameObject dialogue;
     private Dialogue dialogueScript;
 
+    public AudioSource src;
+    public AudioClip sfx;
+
     void Start()
     {
         
@@ -23,6 +26,8 @@ public class ActivateTextItens : MonoBehaviour
         {
             dialogueScript.gameObject.SetActive(true);
             dialogueScript.StartDialogue();
+            src.clip = sfx;
+            src.Play();
             Invoke("DestroyBox", 5f);
         }
     }

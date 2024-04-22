@@ -14,8 +14,8 @@ public class Item : MonoBehaviour
     [SerializeField]
     private string itemDescription;
 
-    public AudioSource src;
-    public AudioClip sfx;
+    //public AudioSource src;
+    //public AudioClip sfx;
 
     private InventoryManager inventoryManager;
 
@@ -31,8 +31,8 @@ public class Item : MonoBehaviour
         {
             inventoryManager.AddItem(itemName, sprite, itemDescription);
             Destroy(gameObject);
-            src.clip = sfx;
-            src.Play();
+            //src.clip = sfx;
+            //src.Play();
         
         }
     }
