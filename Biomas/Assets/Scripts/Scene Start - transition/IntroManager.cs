@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class IntroManager : MonoBehaviour
 {
     public string scene;
-    public TextMeshProUGUI textComponent;
+    public CanvasGroup canvasGroup;
     public AudioSource src;
     public AudioClip sfx;
     public GameObject background;
@@ -15,13 +15,13 @@ public class IntroManager : MonoBehaviour
 
     void Start()
     {
-        SetTextOpacity(0f); // Define a opacidade inicial como 0
+        SetCanvasGroupOpacity(0f); // Define a opacidade inicial como 0
         Invoke("ShowText", 1.5f); // Chama o método ShowText após 1.5 segundos
     }
 
     void ShowText()
     {
-        SetTextOpacity(1f); // Define a opacidade como 100% (1)
+        SetCanvasGroupOpacity(1f); // Define a opacidade como 100% (1)
         background.SetActive(true);
         if (src != null && sfx != null)
         {
@@ -44,10 +44,8 @@ public class IntroManager : MonoBehaviour
         SceneManager.LoadScene(scene);
     }
         
-    void SetTextOpacity(float opacity)
+    void SetCanvasGroupOpacity(float opacity)
     {
-        Color textColor = textComponent.color;
-        textColor.a = opacity; // Define a opacidade da cor do texto
-        textComponent.color = textColor; // Aplica a nova cor ao texto
+        canvasGroup.alpha = opacity; // Define a opacidade do canvas
     }
 }
