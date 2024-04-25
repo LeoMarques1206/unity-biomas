@@ -77,11 +77,10 @@ public class SkillSlot : MonoBehaviour, IPointerClickHandler
             skillDescriptionImage.enabled = true;
             Debug.Log("skill description" + skillDescriptionImage.sprite);
         } 
-        else 
+        else if(skillSprite == null)
         {          
             SkillDescriptionNameText.text = "";
             SkillDescriptionText.text = "";
-            skillDescriptionImage.sprite = null;
             skillDescriptionImage.enabled = false;
         }
     }

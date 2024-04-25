@@ -66,12 +66,25 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
         inventoryManager.DeselectAllSlots(); //deseleciona todos para deixar apenas o que eu quero selecionado
         selectedShader.SetActive(true);
         thisItemSelected = true;
-        ItemDescriptionNameText.text = itemName;
-        ItemDescriptionText.text = itemDescription;
-        if (itemSprite != null)
+        if(itemSprite != null && itemName != null && itemDescription != null) 
         {
+            ItemDescriptionNameText.text = itemName;
+            ItemDescriptionText.text = itemDescription;
             itemDescriptionImage.sprite = itemSprite;
+            itemDescriptionImage.enabled = true;
+        } 
+        else if(itemSprite == null) 
+        {
+            ItemDescriptionNameText.text = "";
+            ItemDescriptionText.text = "";
+            itemDescriptionImage.enabled = false;
+
         }
+        
+        // if (itemSprite != null)
+        // {
+        //     itemDescriptionImage.sprite = itemSprite;
+        // }
     }
 
     public void OnRightClick()
