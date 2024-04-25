@@ -4055,6 +4055,7 @@ MonoBehaviour:
   skillDescriptionImage: {fileID: 408475423}
   SkillDescriptionNameText: {fileID: 624793935}
   SkillDescriptionText: {fileID: 1290497645}
+  canvasGroup: {fileID: 0}
 --- !u!1 &415072691
 GameObject:
   m_ObjectHideFlags: 0
@@ -16387,7 +16388,7 @@ MonoBehaviour:
   respawnPoint: {fileID: 285364324}
   deadFadeRenderer: {fileID: 848925187}
   MedalhaoSapo: 1
-  MedalhaoCobra: 0
+  MedalhaoCobra: 1
   canDash: 1
   dashingPower: 5
   dashingTime: 0.2
@@ -16533,7 +16534,7 @@ Transform:
   m_GameObject: {fileID: 996941754}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.36, y: -3.61, z: 0}
+  m_LocalPosition: {x: 6.53, y: -2.18, z: 0}
   m_LocalScale: {x: 1.2717881, y: 1.327, z: 1.327}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -17638,6 +17639,7 @@ MonoBehaviour:
   skillDescriptionImage: {fileID: 1088214681}
   SkillDescriptionNameText: {fileID: 624793935}
   SkillDescriptionText: {fileID: 1290497645}
+  canvasGroup: {fileID: 0}
 --- !u!1 &1102740577
 GameObject:
   m_ObjectHideFlags: 0

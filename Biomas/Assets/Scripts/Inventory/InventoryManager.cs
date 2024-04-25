@@ -9,6 +9,12 @@ public class InventoryManager : MonoBehaviour
     public ItemSlot[] itemSlot;
     public SkillSlot[] skillSlot;
     // Start is called before the first frame update
+
+    //Boolean dos itens coletados
+    private bool peixe;
+    private bool bola;
+    private bool leite;
+
     void Start()
     {
         LoadSlotData();
