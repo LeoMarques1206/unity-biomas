@@ -7,17 +7,24 @@ public class tatuBola : MonoBehaviour
     public Animator animator;
     public NPCMovement npcMovement;
     public GameObject tatu;
-    
+
     void Start()
     {
-        npcMovement =  tatu.GetComponent<NPCMovement>();
+        if (npcMovement != null)
+        {
+            npcMovement = tatu.GetComponent<NPCMovement>();
+        }
     }
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             animator.SetBool("Bola", true);
-            npcMovement.moveSpeed = 0f;
+            if (npcMovement != null)
+            {
+                npcMovement.moveSpeed = 0f;
+            }
+
         }
     }
 
@@ -26,7 +33,11 @@ public class tatuBola : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             animator.SetBool("Bola", false);
-            npcMovement.moveSpeed = 0.7f;
+            if (npcMovement != null)
+            {
+                npcMovement.moveSpeed = 0.7f;
+            }
+
         }
     }
 }

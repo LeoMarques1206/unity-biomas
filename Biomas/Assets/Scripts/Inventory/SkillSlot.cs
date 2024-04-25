@@ -19,7 +19,6 @@ public class SkillSlot : MonoBehaviour, IPointerClickHandler
     //INICIO DO SLOT DA SKILL
     [SerializeField]
     public Image skillImage;
-
     public GameObject selectedShader;
     public bool thisSkillSelected;
     //FIM DO SLOT DA SKILL
@@ -32,6 +31,8 @@ public class SkillSlot : MonoBehaviour, IPointerClickHandler
     //FIM DA DESCRICAO DO SLOT DA SKILL
 
     private InventoryManager inventoryManager;
+
+    public CanvasGroup canvasGroup;
 
     public void Start()
     {
@@ -66,11 +67,22 @@ public class SkillSlot : MonoBehaviour, IPointerClickHandler
         inventoryManager.DeselectAllSlots(); //deseleciona todos para deixar apenas o que eu quero selecionado
         selectedShader.SetActive(true);
         thisSkillSelected = true;
-        SkillDescriptionNameText.text = skillName;
-        SkillDescriptionText.text = skillDescription;
-        if (skillSprite != null)
+        Debug.Log("Sprite da skill" + skillSprite);
+
+        if (skillSprite != null && skillName != null && skillDescription != null)
         {
+            SkillDescriptionNameText.text = skillName;
+            SkillDescriptionText.text = skillDescription;
             skillDescriptionImage.sprite = skillSprite;
+            skillDescriptionImage.enabled = true;
+            Debug.Log("skill description" + skillDescriptionImage.sprite);
+        } 
+        else 
+        {          
+            SkillDescriptionNameText.text = "";
+            SkillDescriptionText.text = "";
+            skillDescriptionImage.sprite = null;
+            skillDescriptionImage.enabled = false;
         }
     }
 
