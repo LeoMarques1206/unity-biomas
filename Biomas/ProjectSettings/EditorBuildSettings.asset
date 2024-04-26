@@ -23,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/IntroCaatinga.unity
     guid: a4cacee9e3a7d284d9ddc3f52355274a
+  - enabled: 1
+    path: Assets/Scenes/IntroCasa.unity
+    guid: d123a84d95550db4babb88d03ed2bf4c
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 025be42d39631494fac00c6d55e84f06
   m_configObjects: {}

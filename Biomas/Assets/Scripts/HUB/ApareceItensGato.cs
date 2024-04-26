@@ -6,19 +6,34 @@ using UnityEngine.UI;
 public class ApareceItensGato : MonoBehaviour
 {
     public Image item1, item2, item3;
-    private bool teste = true; //mudar depois para public script
-
+    public GameObject player;
+    private PlayerMovement playerMovement;
+    public GameObject portalFinal;
+    public Animator catAnimator;
+    
     void Start ()
     {
-        //Instanciar script referente aos booleanos dos itens ao adquiri-los
+       playerMovement = player.GetComponent<PlayerMovement>();
+
+       //TESTANDO
+       playerMovement.hasBola = true;
+       playerMovement.hasLeite = true;
+
     }
     void Update()
     {
-        if(teste = true)
+        if(playerMovement.hasPeixe == true)
         {
-            item1.color = Color.white; 
-            item2.color = Color.white;  
-        }
+            item1.color = Color.white;  
+        } 
+        if(playerMovement.hasBola == true)
+        {
+            item1.color = Color.white;  
+        } 
+        if(playerMovement.hasLeite == true)
+        {
+            item1.color = Color.white;  
+        } 
 
         
         

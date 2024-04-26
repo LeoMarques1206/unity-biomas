@@ -689,8 +689,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Aperte espa\xE7o para pular"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: aca6791581ce2e748885adef061de6ba, type: 2}
-  m_sharedMaterial: {fileID: 5171811964323974376, guid: aca6791581ce2e748885adef061de6ba, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -720,7 +720,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -890,7 +890,16 @@ MonoBehaviour:
   speed: 5
   jumpingPower: 0
   animator: {fileID: 1350775947}
+  respawnPoint: {fileID: 0}
+  deadFadeRenderer: {fileID: 0}
   MedalhaoSapo: 0
+  MedalhaoCobra: 0
+  canDash: 1
+  dashingPower: 2
+  dashingTime: 0.2
+  hasPeixe: 0
+  hasBola: 0
+  hasLeite: 0
   src: {fileID: 0}
   sfx: {fileID: 8300000, guid: 13fef59ec54a55a42ba16b257758dedd, type: 3}
   canMove: 1
@@ -899,6 +908,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+  tr: {fileID: 0}
 --- !u!61 &1350775949
 BoxCollider2D:
   m_ObjectHideFlags: 0
