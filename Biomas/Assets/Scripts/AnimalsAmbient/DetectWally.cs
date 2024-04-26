@@ -39,7 +39,7 @@ public class DetectWally : MonoBehaviour
     {
         if(podeVoar == true){
             Wally.transform.Translate(direction.normalized * speed * Time.deltaTime);
-            Debug.Log("Voando");
+            // Debug.Log("Voando");
         }
         
     }

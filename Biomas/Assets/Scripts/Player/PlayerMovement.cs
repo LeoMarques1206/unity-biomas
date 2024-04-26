@@ -26,6 +26,10 @@ public class PlayerMovement : MonoBehaviour
     public float dashingTime = 0.2f;
     private float dashingCooldown = 0.5f;
 
+    //Itens adquiridos 
+    public bool hasPeixe;
+    public bool hasBola;
+    public bool hasLeite;
 
     public AudioSource src;
     public AudioClip sfx;
@@ -41,10 +45,17 @@ public class PlayerMovement : MonoBehaviour
     void Start() 
     {
         LoadSkillsData();
+        LoadItensData();
+    }
+
+    void OnDestroy()
+    {
+        saveItensData();
     }
 
     void Update()
-    {            
+    {           
+        Debug.Log("Peixe: " + hasPeixe); 
         //Debug.Log(rb.velocity.y);
         if(isDashing)
         {
@@ -107,8 +118,6 @@ public class PlayerMovement : MonoBehaviour
         Flip();
         UpdateAnimator();
     }
-
-    
 
     private void FixedUpdate()
     {
@@ -229,6 +238,7 @@ public class PlayerMovement : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
+    //Metodos de save
     public void saveSkillsData(int medalhao) 
     {
         if(medalhao == 1)
@@ -239,8 +249,27 @@ public class PlayerMovement : MonoBehaviour
         {
             PlayerPrefs.SetInt("SkillCobra", 1);
         }
+        PlayerPrefs.Save();
     }
 
+    public void saveItensData()
+    {
+        if(hasBola)
+        {
+            PlayerPrefs.SetInt("Bola", 1);
+        } 
+        else if(hasPeixe)
+        {
+            PlayerPrefs.SetInt("Peixe", 1);
+        } 
+        else if(hasLeite)
+        {
+            PlayerPrefs.SetInt("Leite", 1);
+        }
+        PlayerPrefs.Save();
+    }
+
+    //Metodos de load 
     public void LoadSkillsData()
     {
         if(PlayerPrefs.GetInt("SkillSapo") == 1)
@@ -251,6 +280,24 @@ public class PlayerMovement : MonoBehaviour
         if(PlayerPrefs.GetInt("SkillCobra") == 1)
         {
             MedalhaoCobra = true;
+        }
+    }
+
+    public void LoadItensData()
+    {
+        if(PlayerPrefs.GetInt("Bola") == 1)
+        {
+            hasBola = true;
+        }
+
+        if(PlayerPrefs.GetInt("Peixe") == 1)
+        {
+            hasPeixe = true;
+        }
+
+        if(PlayerPrefs.GetInt("Leite") == 1)
+        {
+            hasLeite = true;
         }
     }
 

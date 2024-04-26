@@ -66,14 +66,22 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
         inventoryManager.DeselectAllSlots(); //deseleciona todos para deixar apenas o que eu quero selecionado
         selectedShader.SetActive(true);
         thisItemSelected = true;
-        if(itemSprite != null && itemName != null && itemDescription != null) 
+        
+        if(itemName != null && itemDescription != null)     //tirar depois de implementar a foto entre cenas 
         {
             ItemDescriptionNameText.text = itemName;
             ItemDescriptionText.text = itemDescription;
             itemDescriptionImage.sprite = itemSprite;
             itemDescriptionImage.enabled = true;
         } 
-        else if(itemSprite == null) 
+        else if(itemSprite != null && itemName != null && itemDescription != null) 
+        {
+            ItemDescriptionNameText.text = itemName;
+            ItemDescriptionText.text = itemDescription;
+            itemDescriptionImage.sprite = itemSprite;
+            itemDescriptionImage.enabled = true;
+        } 
+        else if(itemSprite == null && itemName == null) 
         {
             ItemDescriptionNameText.text = "";
             ItemDescriptionText.text = "";

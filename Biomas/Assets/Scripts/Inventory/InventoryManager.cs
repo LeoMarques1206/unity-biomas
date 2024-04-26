@@ -10,10 +10,6 @@ public class InventoryManager : MonoBehaviour
     public SkillSlot[] skillSlot;
     // Start is called before the first frame update
 
-    //Boolean dos itens coletados
-    private bool peixe;
-    private bool bola;
-    private bool leite;
 
     void Start()
     {
@@ -96,6 +92,9 @@ public class InventoryManager : MonoBehaviour
             PlayerPrefs.SetString("SkillDescription_" + i, skillSlot[i].skillDescription);
         }
         PlayerPrefs.Save();
+
+        Debug.Log("entrou no save");
+        Debug.Log("item name: " + PlayerPrefs.GetString("ItemName_0"));
     }
 
     private void LoadSlotData()
@@ -103,6 +102,7 @@ public class InventoryManager : MonoBehaviour
         for (int i = 0; i < itemSlot.Length; i++)
         {
             itemSlot[i].itemName = PlayerPrefs.GetString("ItemName_" + i);
+            Debug.Log("itemSlot[i].itemName" + itemSlot[i].itemName);
             itemSlot[i].itemDescription = PlayerPrefs.GetString("ItemDescription_" + i);
         }
         for (int i = 0; i < skillSlot.Length; i++)
@@ -110,6 +110,10 @@ public class InventoryManager : MonoBehaviour
             skillSlot[i].skillName = PlayerPrefs.GetString("SkillName_" + i);
             skillSlot[i].skillDescription = PlayerPrefs.GetString("SkillDescription_" + i);
         }
+
+        Debug.Log("entrou no load");
+        Debug.Log("item name: " + PlayerPrefs.GetString("ItemName_0"));
+
     }
 
 }

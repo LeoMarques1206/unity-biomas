@@ -18,11 +18,13 @@ public class Item : MonoBehaviour
     //public AudioClip sfx;
 
     private InventoryManager inventoryManager;
+    private PlayerMovement player;
 
     // Start is called before the first frame update
     void Start()
     {
         inventoryManager = GameObject.Find("Player").transform.Find("InventoryCanvas").GetComponent<InventoryManager>();
+        player = GameObject.Find("Player").GetComponent<PlayerMovement>();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -30,6 +32,19 @@ public class Item : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             inventoryManager.AddItem(itemName, sprite, itemDescription);
+            if(itemName == "Bola de lã")
+            {
+                player.hasBola = true;
+            }
+            else if(itemName == "Peixe")
+            {
+                player.hasPeixe = true;
+            }
+            else if(itemName == "Leite")
+            {
+                player.hasLeite = true;
+            }
+
             Destroy(gameObject);
             //src.clip = sfx;
             //src.Play();
