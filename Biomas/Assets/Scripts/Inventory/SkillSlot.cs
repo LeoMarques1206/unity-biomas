@@ -31,9 +31,7 @@ public class SkillSlot : MonoBehaviour, IPointerClickHandler
     //FIM DA DESCRICAO DO SLOT DA SKILL
 
     private InventoryManager inventoryManager;
-
-    public CanvasGroup canvasGroup;
-
+    
     public void Start()
     {
         inventoryManager = GameObject.Find("InventoryCanvas").GetComponent<InventoryManager>();
@@ -46,7 +44,7 @@ public class SkillSlot : MonoBehaviour, IPointerClickHandler
         this.skillDescription = skillDescription;
         isFull = true;
 
-        UpdateUI();
+        // UpdateUI();
     }
 
     public void OnPointerClick(PointerEventData eventData)

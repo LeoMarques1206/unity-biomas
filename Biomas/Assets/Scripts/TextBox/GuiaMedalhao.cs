@@ -28,9 +28,9 @@ public class GuiaMedalhao : MonoBehaviour
         {
             dialogueScript.gameObject.SetActive(true);
             dialogueScript.StartDialogue();
-            skill.GiveItem();
             if(playerSkills.MedalhaoSapo == false)
             {   
+                skill.GiveItem();
                 playerSkills.saveSkillsData(1);
             }
             Invoke("Load", 0.1f);

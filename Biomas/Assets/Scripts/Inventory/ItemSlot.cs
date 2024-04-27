@@ -45,7 +45,7 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
         this.itemDescription = itemDescription;
         isFull = true;
 
-        UpdateUI();
+        // UpdateUI();
     }
 
     public void OnPointerClick(PointerEventData eventData)
