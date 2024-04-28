@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
+
+    public GameObject item;
     [SerializeField] //faz a variavel ser visivel e editavel na unity
     private string itemName;
 
@@ -25,6 +27,8 @@ public class Item : MonoBehaviour
     {
         inventoryManager = GameObject.Find("Player").transform.Find("InventoryCanvas").GetComponent<InventoryManager>();
         player = GameObject.Find("Player").GetComponent<PlayerMovement>();
+        Coletado();
+       
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -48,6 +52,23 @@ public class Item : MonoBehaviour
             Destroy(gameObject);
             //src.clip = sfx;
             //src.Play();
+        
+        }
+    }
+
+    private void Coletado()
+    {
+        if(itemName == "Peixe" && player.hasPeixe)
+        {
+            item.SetActive(false);
+
+        } else if(itemName == "Bola de lã" && player.hasBola)
+        {
+            item.SetActive(false);
+        
+        } else if(itemName == "Leite" && player.hasLeite)
+        {
+            item.SetActive(false);
         
         }
     }

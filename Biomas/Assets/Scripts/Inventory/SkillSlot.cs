@@ -44,7 +44,7 @@ public class SkillSlot : MonoBehaviour, IPointerClickHandler
         this.skillDescription = skillDescription;
         isFull = true;
 
-        // UpdateUI();
+        UpdateUI();
     }
 
     public void OnPointerClick(PointerEventData eventData)
@@ -65,7 +65,7 @@ public class SkillSlot : MonoBehaviour, IPointerClickHandler
         inventoryManager.DeselectAllSlots(); //deseleciona todos para deixar apenas o que eu quero selecionado
         selectedShader.SetActive(true);
         thisSkillSelected = true;
-        Debug.Log("Sprite da skill" + skillSprite);
+        // Debug.Log("Sprite da skill" + skillSprite);
 
         if (skillSprite != null && skillName != null && skillDescription != null)
         {
@@ -73,7 +73,7 @@ public class SkillSlot : MonoBehaviour, IPointerClickHandler
             SkillDescriptionText.text = skillDescription;
             skillDescriptionImage.sprite = skillSprite;
             skillDescriptionImage.enabled = true;
-            Debug.Log("skill description" + skillDescriptionImage.sprite);
+            // Debug.Log("skill description" + skillDescriptionImage.sprite);
         } 
         else if(skillSprite == null)
         {          
@@ -92,12 +92,12 @@ public class SkillSlot : MonoBehaviour, IPointerClickHandler
     {
         skillImage.sprite = skillSprite;
         skillImage.enabled = isFull;
-        SkillDescriptionNameText.text = skillName;
-        SkillDescriptionText.text = skillDescription;
+        // SkillDescriptionNameText.text = skillName;
+        // SkillDescriptionText.text = skillDescription;
 
-        if (skillSprite != null)
-        {
-            skillDescriptionImage.sprite = skillSprite;
-        }
+        // if (skillSprite != null)
+        // {
+        //     skillDescriptionImage.sprite = skillSprite;
+        // }
     }
 }

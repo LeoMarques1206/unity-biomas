@@ -45,7 +45,7 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
         this.itemDescription = itemDescription;
         isFull = true;
 
-        // UpdateUI();
+        UpdateUI();
     }
 
     public void OnPointerClick(PointerEventData eventData)
@@ -67,22 +67,24 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
         selectedShader.SetActive(true);
         thisItemSelected = true;
         
-        if(itemName != null && itemDescription != null)     //tirar depois de implementar a foto entre cenas 
+        // if(itemName != null && itemDescription != null)     //tirar depois de implementar a foto entre cenas 
+        // {
+        //     ItemDescriptionNameText.text = itemName;
+        //     ItemDescriptionText.text = itemDescription;
+        //     itemDescriptionImage.sprite = itemSprite;
+        //     itemDescriptionImage.enabled = true;
+        // } 
+        Debug.Log("item sprite: " + itemSprite + " item name: " + itemName);
+        if(itemSprite != null && itemName != null && itemDescription != null) 
         {
             ItemDescriptionNameText.text = itemName;
             ItemDescriptionText.text = itemDescription;
             itemDescriptionImage.sprite = itemSprite;
             itemDescriptionImage.enabled = true;
         } 
-        else if(itemSprite != null && itemName != null && itemDescription != null) 
+        else if(itemSprite == null) 
         {
-            ItemDescriptionNameText.text = itemName;
-            ItemDescriptionText.text = itemDescription;
-            itemDescriptionImage.sprite = itemSprite;
-            itemDescriptionImage.enabled = true;
-        } 
-        else if(itemSprite == null && itemName == null) 
-        {
+            Debug.Log("entrou");
             ItemDescriptionNameText.text = "";
             ItemDescriptionText.text = "";
             itemDescriptionImage.enabled = false;
@@ -104,12 +106,12 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
     {
         itemImage.sprite = itemSprite;
         itemImage.enabled = isFull;
-        ItemDescriptionNameText.text = itemName;
-        ItemDescriptionText.text = itemDescription;
+        // ItemDescriptionNameText.text = itemName;
+        // ItemDescriptionText.text = itemDescription;
 
-        if (itemSprite != null)
-        {
-            itemDescriptionImage.sprite = itemSprite;
-        }
+        // if (itemSprite != null)
+        // {
+        //     itemDescriptionImage.sprite = itemSprite;
+        // }
     }
 }

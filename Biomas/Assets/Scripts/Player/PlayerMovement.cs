@@ -27,9 +27,9 @@ public class PlayerMovement : MonoBehaviour
     private float dashingCooldown = 0.5f;
 
     //Itens adquiridos 
-    public bool hasPeixe;
-    public bool hasBola;
-    public bool hasLeite;
+    public bool hasPeixe = false;
+    public bool hasBola = false;
+    public bool hasLeite = false;
 
     public AudioSource src;
     public AudioClip sfx;
@@ -44,6 +44,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private TrailRenderer tr;
     void Start() 
     {
+        // PlayerPrefs.DeleteAll();
         LoadSkillsData();
         LoadItensData();
     }
@@ -287,6 +288,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if(PlayerPrefs.GetInt("Bola") == 1)
         {
+            Debug.Log("entro");
             hasBola = true;
         }
 

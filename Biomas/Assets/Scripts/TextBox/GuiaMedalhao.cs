@@ -6,7 +6,6 @@ public class GuiaMedalhao : MonoBehaviour
 {
     public GameObject dialogue;
     private Dialogue dialogueScript;
-
     private PlayerMovement playerSkills;
     public GameObject player;
     private Skill skill;
@@ -39,10 +38,7 @@ public class GuiaMedalhao : MonoBehaviour
 
     public void Load()  
     {   
-        if(playerSkills.MedalhaoSapo == false){
-            playerSkills.LoadSkillsData();
-        }
-        
+        playerSkills.LoadSkillsData();
     }
 
     public void OnTriggerExit2D(Collider2D other)

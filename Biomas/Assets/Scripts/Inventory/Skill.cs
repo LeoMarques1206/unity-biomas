@@ -31,14 +31,11 @@ public class Skill : MonoBehaviour
 
     public void GiveItem()
     {
-        if(playerMovement.MedalhaoSapo == false)
-        {
-            inventoryManager.AddSkill(skillName, sprite, skillDescription);
-        }
+        inventoryManager.AddSkill(skillName, sprite, skillDescription);
         
-        if(playerMovement.MedalhaoCobra == false)
-        {
-            inventoryManager.AddSkill(skillName, sprite, skillDescription);
-        }
+        // if(playerMovement.MedalhaoCobra == false)
+        // {
+        //     inventoryManager.AddSkill(skillName, sprite, skillDescription);
+        // }
     }
 }
