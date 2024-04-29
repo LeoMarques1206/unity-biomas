@@ -46,11 +46,13 @@ public class DetectWally : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("Player") && !flagWally)
+        if(other.CompareTag("Player") && playerMovement.hasWally)
         {
             dialogueScript.gameObject.SetActive(true);
             dialogueScript.StartDialogue();
             playerMovement.canMove = false;
+            playerMovement.canDash = false;
+            playerMovement.hasWally = false;
             Invoke("MoveWally", 2f);
             Invoke("DestroyBox", 5f);
             flagWally = true;

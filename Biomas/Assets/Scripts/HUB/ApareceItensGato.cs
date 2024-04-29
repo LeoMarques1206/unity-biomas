@@ -13,12 +13,8 @@ public class ApareceItensGato : MonoBehaviour
     
     void Start ()
     {
-       playerMovement = player.GetComponent<PlayerMovement>();
+        playerMovement = player.GetComponent<PlayerMovement>();
 
-       //TESTANDO
-      // playerMovement.hasPeixe = true;
-      // playerMovement.hasBola = true;
-      // playerMovement.hasLeite = true;
 
     }
     void Update()
@@ -26,17 +22,26 @@ public class ApareceItensGato : MonoBehaviour
         if(playerMovement.hasPeixe == true)
         {
             item1.color = Color.white;  
-        } 
+        } else 
+        {
+            item1.color = Color.black;    
+        }
+        
         if(playerMovement.hasBola == true)
         {
-            item1.color = Color.white;  
-        } 
+            item2.color = Color.white;  
+        } else 
+        {
+            item2.color = Color.black;    
+        }
+        
         if(playerMovement.hasLeite == true)
         {
-            item1.color = Color.white;  
-        } 
-
-        
+            item3.color = Color.white;  
+        } else 
+        {
+            item3.color = Color.black;    
+        }
         
     }
 }

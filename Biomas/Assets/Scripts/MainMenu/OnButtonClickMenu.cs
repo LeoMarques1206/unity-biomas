@@ -27,6 +27,7 @@ public class MoveCameraOnButtonClick : MonoBehaviour
     void IniciaJogo()
     {
         Debug.Log("IniciaJogo"); //Mudar de cena
+        PlayerPrefs.DeleteAll();
         SceneManager.LoadScene("StartLore");
     }
 

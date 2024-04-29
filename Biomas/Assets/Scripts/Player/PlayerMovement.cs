@@ -35,6 +35,8 @@ public class PlayerMovement : MonoBehaviour
     public AudioClip sfx;
 
     public bool canMove = true;
+    //se o wally esta na cena
+    public bool hasWally = true;
 
     private int remainingJumps = 2; // Contador para pulos restantes
 
@@ -44,9 +46,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private TrailRenderer tr;
     void Start() 
     {
-        // PlayerPrefs.DeleteAll();
+        // Debug.Log("Tem o peixe? " + hasPeixe);
         LoadSkillsData();
         LoadItensData();
+        
     }
 
     void OnDestroy()
@@ -56,7 +59,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {           
-        //Debug.Log("Peixe: " + hasPeixe); 
+        // Debug.Log("Tem o peixe? " + hasPeixe); 
         //Debug.Log(rb.velocity.y);
         if(isDashing)
         {
@@ -259,14 +262,22 @@ public class PlayerMovement : MonoBehaviour
         {
             PlayerPrefs.SetInt("Bola", 1);
         } 
-        else if(hasPeixe)
+         
+        if(hasPeixe)
         {
             PlayerPrefs.SetInt("Peixe", 1);
         } 
-        else if(hasLeite)
+        
+        if(hasLeite)
         {
             PlayerPrefs.SetInt("Leite", 1);
         }
+        
+        if(!hasWally)  //Nao ter o wally ao voltar no bioma
+        {   
+            PlayerPrefs.SetInt("Wally", 1);
+        }
+
         PlayerPrefs.Save();
     }
 
@@ -286,6 +297,10 @@ public class PlayerMovement : MonoBehaviour
 
     public void LoadItensData()
     {
+
+        // Debug.Log("load debug bola " + PlayerPrefs.GetInt("Bola"));
+        // Debug.Log("load debug peixe " + PlayerPrefs.GetInt("Peixe"));
+        // Debug.Log("load debug leite " + PlayerPrefs.GetInt("Leite"));
         if(PlayerPrefs.GetInt("Bola") == 1)
         {
             Debug.Log("entro");
@@ -294,12 +309,18 @@ public class PlayerMovement : MonoBehaviour
 
         if(PlayerPrefs.GetInt("Peixe") == 1)
         {
+            Debug.Log("ENTROU NESSA PARTE DO CODIGO");
             hasPeixe = true;
         }
 
         if(PlayerPrefs.GetInt("Leite") == 1)
         {
             hasLeite = true;
+        }
+
+        if(PlayerPrefs.GetInt("Wally") == 1)
+        {
+            hasWally = false;
         }
     }
 

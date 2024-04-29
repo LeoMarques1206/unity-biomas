@@ -10,16 +10,21 @@ namespace Unifor.Biomas.AI
     public class BiomasAIManager : MonoBehaviour
     {
         private const string GPT_SYSTEM = @"
-Vocï¿½ ï¿½ um especilista em geografia e biologia brasileiras. 
-Especificamente, vocï¿½ conhece os biomas brasileiros, sua fauna e flora.
+Você é um especilista em geografia e biologia brasileiras. 
+Especificamente, você conhece os biomas brasileiros, sua fauna e flora.
 ";
-        private const string USER_PROMPT = "Descreva, em um a dois parï¿½grafos, #";
+        private const string USER_PROMPT = "Descreva, em um a dois parágrafos, #";
 
-        [Header("Resources Configuration")]
+        [Header("GPT Setup")]
+        [SerializeField]
+        [Tooltip("If selected, the AI will ask GPT about the biome or wildlife at runtime and save it response in cache. Be aware of the remote GPT call delay.")]
+        private bool _useGptAtRuntime = false;
+
         [SerializeField]
         private string _gptApiKeyResource = "GPT_API_PATH";
         private string _gptApiKey;
 
+        [Header("Cache Setup")]
         [SerializeField]
         private string _predefinedDataResource = "predefined.json";
 
@@ -47,7 +52,7 @@ Especificamente, vocï¿½ conhece os biomas brasileiros, sua fauna e flora.
         private IEnumerator _QueryGPTCoroutine(string name, GptCallback callback, string biome = null)
         {
             var prompt = new string[] { USER_PROMPT.Replace("#", name) };
-            Debug.Log($"Ativando GPT com prompt {prompt}");
+            Debug.Log($"Ativando GPT com prompt {prompt[0]}");
 
             var gptQuery = _completionService.GenerateCompletion(GPT_SYSTEM, prompt);
             yield return new WaitUntil(() => gptQuery.IsCompleted);
@@ -72,7 +77,7 @@ Especificamente, vocï¿½ conhece os biomas brasileiros, sua fauna e flora.
         public void DescribeBiome(string biome, GptCallback callback)
         {
             var description = _cache.DescriptionOf(biome);
-            if (description == null)
+            if (description == null && _useGptAtRuntime)
                 StartCoroutine(_QueryGPTCoroutine(biome, callback));
             else callback(description);
         }
@@ -86,7 +91,7 @@ Especificamente, vocï¿½ conhece os biomas brasileiros, sua fauna e flora.
         public void DescribeWildlife(string biome, string wildlife, GptCallback callback)
         {
             var description = _cache.DescriptionOf(wildlife);
-            if (description == null)
+            if (description == null && _useGptAtRuntime)
                 StartCoroutine(_QueryGPTCoroutine(wildlife, callback, biome));
             else callback(description);
         }

@@ -7569,7 +7569,9 @@ MonoBehaviour:
   canvasGroup: {fileID: 1981999577}
   conteudo: {fileID: 1966437144}
   nomeDoTrigger: AraraIA
-  nome: Arara-azul
+  nome: Arara-Azul
+  bioma: "Amaz\xF4nia"
+  IA: {fileID: 2047030907}
 --- !u!61 &233127727
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8514,6 +8516,7 @@ MonoBehaviour:
   src: {fileID: 574757061}
   sfx: {fileID: 8300000, guid: f4c4a618ed62d4d4c8b79581876193f2, type: 3}
   canMove: 1
+  hasWally: 1
   rb: {fileID: 308563414}
   groundCheck: {fileID: 978567245}
   groundLayer:
@@ -11908,6 +11911,8 @@ MonoBehaviour:
   conteudo: {fileID: 1966437144}
   nomeDoTrigger: SapoIA2
   nome: Sapo
+  bioma: "Amaz\xF4nia"
+  IA: {fileID: 2047030907}
 --- !u!1 &558754465
 GameObject:
   m_ObjectHideFlags: 0
@@ -12086,6 +12091,8 @@ MonoBehaviour:
   conteudo: {fileID: 1966437144}
   nomeDoTrigger: CopoLeiteIA
   nome: Copo de leite
+  bioma: "Amaz\xF4nia"
+  IA: {fileID: 2047030907}
 --- !u!1 &571167406
 GameObject:
   m_ObjectHideFlags: 0
@@ -12958,6 +12965,8 @@ MonoBehaviour:
   conteudo: {fileID: 1966437144}
   nomeDoTrigger: SapoIA
   nome: Sapo
+  bioma: "Amaz\xF4nia"
+  IA: {fileID: 2047030907}
 --- !u!1 &595883512
 GameObject:
   m_ObjectHideFlags: 0
@@ -17622,7 +17631,9 @@ MonoBehaviour:
   canvasGroup: {fileID: 1981999577}
   conteudo: {fileID: 1966437144}
   nomeDoTrigger: RegiaIA3
-  nome: "Vit\xF3ria r\xE9gia"
+  nome: "Vit\xF3ria R\xE9gia"
+  bioma: "Amaz\xF4nia"
+  IA: {fileID: 2047030907}
 --- !u!1 &955023697
 GameObject:
   m_ObjectHideFlags: 0
@@ -17716,7 +17727,9 @@ MonoBehaviour:
   canvasGroup: {fileID: 1981999577}
   conteudo: {fileID: 1966437144}
   nomeDoTrigger: RegiaIA2
-  nome: "Vit\xF3ria r\xE9gia"
+  nome: "Vit\xF3ria R\xE9gia"
+  bioma: "Amaz\xF4nia"
+  IA: {fileID: 2047030907}
 --- !u!1 &960614509
 GameObject:
   m_ObjectHideFlags: 3
@@ -19063,7 +19076,9 @@ MonoBehaviour:
   canvasGroup: {fileID: 1981999577}
   conteudo: {fileID: 1966437144}
   nomeDoTrigger: RegiaIA5
-  nome: "Vit\xF3ria r\xE9gia"
+  nome: "Vit\xF3ria R\xE9gia"
+  bioma: "Amaz\xF4nia"
+  IA: {fileID: 2047030907}
 --- !u!1 &1074314270
 GameObject:
   m_ObjectHideFlags: 0
@@ -20606,6 +20621,8 @@ MonoBehaviour:
   conteudo: {fileID: 1966437144}
   nomeDoTrigger: CopoLeiteIA3
   nome: Copo de leite
+  bioma: "Amaz\xF4nia"
+  IA: {fileID: 2047030907}
 --- !u!1 &1202149948
 GameObject:
   m_ObjectHideFlags: 0
@@ -21245,7 +21262,9 @@ MonoBehaviour:
   canvasGroup: {fileID: 1981999577}
   conteudo: {fileID: 1966437144}
   nomeDoTrigger: AraraIA3
-  nome: Arara-azul
+  nome: Arara-Azul
+  bioma: "Amaz\xF4nia"
+  IA: {fileID: 2047030907}
 --- !u!1 &1237014440
 GameObject:
   m_ObjectHideFlags: 0
@@ -22455,7 +22474,9 @@ MonoBehaviour:
   canvasGroup: {fileID: 1981999577}
   conteudo: {fileID: 1966437144}
   nomeDoTrigger: PlantaCarnivoraAI2
-  nome: Planta Carnivora
+  nome: "Planta Carn\xEDvora"
+  bioma: "Amaz\xF4nia"
+  IA: {fileID: 2047030907}
 --- !u!1 &1319997426
 GameObject:
   m_ObjectHideFlags: 0
@@ -22855,6 +22876,8 @@ MonoBehaviour:
   conteudo: {fileID: 1966437144}
   nomeDoTrigger: CopoLeiteIA4
   nome: Copo de leite
+  bioma: "Amaz\xF4nia"
+  IA: {fileID: 2047030907}
 --- !u!1 &1356787133
 GameObject:
   m_ObjectHideFlags: 0
@@ -24633,7 +24656,9 @@ MonoBehaviour:
   canvasGroup: {fileID: 1981999577}
   conteudo: {fileID: 1966437144}
   nomeDoTrigger: RegiaIA
-  nome: "Vit\xF3ria r\xE9gia"
+  nome: "Vit\xF3ria R\xE9gia"
+  bioma: "Amaz\xF4nia"
+  IA: {fileID: 2047030907}
 --- !u!1 &1432903920
 GameObject:
   m_ObjectHideFlags: 0
@@ -25280,6 +25305,8 @@ MonoBehaviour:
   conteudo: {fileID: 1966437144}
   nomeDoTrigger: CopoLeiteIA2
   nome: Copo de leite
+  bioma: "Amaz\xF4nia"
+  IA: {fileID: 2047030907}
 --- !u!1 &1499197353
 GameObject:
   m_ObjectHideFlags: 0
@@ -25965,7 +25992,9 @@ MonoBehaviour:
   canvasGroup: {fileID: 1981999577}
   conteudo: {fileID: 1966437144}
   nomeDoTrigger: AraraIA2
-  nome: Arara-azul
+  nome: Arara-Azul
+  bioma: "Amaz\xF4nia"
+  IA: {fileID: 2047030907}
 --- !u!1 &1555388912
 GameObject:
   m_ObjectHideFlags: 0
@@ -26627,6 +26656,8 @@ MonoBehaviour:
   conteudo: {fileID: 1966437144}
   nomeDoTrigger: CobraIA
   nome: Cobra
+  bioma: "Amaz\xF4nia"
+  IA: {fileID: 2047030907}
 --- !u!1 &1585047778
 GameObject:
   m_ObjectHideFlags: 0
@@ -27983,6 +28014,8 @@ MonoBehaviour:
   conteudo: {fileID: 1966437144}
   nomeDoTrigger: OncaAI
   nome: "On\xE7a-Pintada"
+  bioma: "Amaz\xF4nia"
+  IA: {fileID: 2047030907}
 --- !u!1 &1734564274
 GameObject:
   m_ObjectHideFlags: 0
@@ -28295,6 +28328,8 @@ MonoBehaviour:
   conteudo: {fileID: 1966437144}
   nomeDoTrigger: SapoIA3
   nome: Sapo
+  bioma: "Amaz\xF4nia"
+  IA: {fileID: 2047030907}
 --- !u!1 &1773323213
 GameObject:
   m_ObjectHideFlags: 0
@@ -29996,6 +30031,8 @@ MonoBehaviour:
   conteudo: {fileID: 1966437144}
   nomeDoTrigger: CapivaraIA
   nome: Capivara
+  bioma: "Amaz\xF4nia"
+  IA: {fileID: 2047030907}
 --- !u!1 &1896114571
 GameObject:
   m_ObjectHideFlags: 0
@@ -32539,6 +32576,8 @@ MonoBehaviour:
   conteudo: {fileID: 1966437144}
   nomeDoTrigger: PiranhaIA2
   nome: Piranha
+  bioma: "Amaz\xF4nia"
+  IA: {fileID: 2047030907}
 --- !u!61 &1962276969
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38700,6 +38739,8 @@ MonoBehaviour:
   conteudo: {fileID: 1966437144}
   nomeDoTrigger: PiranhaIA
   nome: Piranha
+  bioma: "Amaz\xF4nia"
+  IA: {fileID: 2047030907}
 --- !u!61 &2025378378
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38838,7 +38879,9 @@ MonoBehaviour:
   canvasGroup: {fileID: 1981999577}
   conteudo: {fileID: 1966437144}
   nomeDoTrigger: RegiaIA4
-  nome: "Vit\xF3ria r\xE9gia"
+  nome: "Vit\xF3ria R\xE9gia"
+  bioma: "Amaz\xF4nia"
+  IA: {fileID: 2047030907}
 --- !u!1 &2031687730
 GameObject:
   m_ObjectHideFlags: 0
@@ -39051,6 +39094,53 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 12.594502, y: 2.2248738, z: 0}
   m_LocalScale: {x: 367.17563, y: 38.650066, z: 38.650066}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2047030907
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2047030909}
+  - component: {fileID: 2047030908}
+  m_Layer: 0
+  m_Name: AIManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2047030908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047030907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e422889852017544ab6ab30a23c80c2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _useGptAtRuntime: 0
+  _gptApiKeyResource: GPT_API_PATH
+  _predefinedDataResource: predefined
+--- !u!4 &2047030909
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047030907}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.5126846, y: 0.98932135, z: -9.967566}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -40859,7 +40949,9 @@ MonoBehaviour:
   canvasGroup: {fileID: 1981999577}
   conteudo: {fileID: 1966437144}
   nomeDoTrigger: RegiaIA6
-  nome: "Vit\xF3ria r\xE9gia"
+  nome: "Vit\xF3ria R\xE9gia"
+  bioma: "Amaz\xF4nia"
+  IA: {fileID: 2047030907}
 --- !u!1 &2146404744
 GameObject:
   m_ObjectHideFlags: 0
@@ -40951,3 +41043,4 @@ SceneRoots:
   - {fileID: 1589658427}
   - {fileID: 1800216916}
   - {fileID: 1213034396}
+  - {fileID: 2047030909}
