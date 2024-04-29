@@ -7,8 +7,10 @@ public class GuiaMedalhao : MonoBehaviour
     public GameObject dialogue;
     private Dialogue dialogueScript;
     private PlayerMovement playerSkills;
+    public float espera = 2f;
     public GameObject player;
     private Skill skill;
+    private bool entrou;
 
     void Start()
     {
@@ -27,6 +29,20 @@ public class GuiaMedalhao : MonoBehaviour
         {
             dialogueScript.gameObject.SetActive(true);
             dialogueScript.StartDialogue();
+        
+             if(!entrou)
+            {
+                playerSkills.canMove = false;
+                playerSkills.canDash = false;
+                entrou = true;
+                if(espera > 0){
+                    Invoke("WaitTime", espera);
+                } else {
+                    playerSkills.canMove = true;
+                    playerSkills.canDash = true;
+                }
+            }
+
             if(playerSkills.MedalhaoSapo == false)
             {   
                 skill.GiveItem();
@@ -39,6 +55,11 @@ public class GuiaMedalhao : MonoBehaviour
     public void Load()  
     {   
         playerSkills.LoadSkillsData();
+    }
+    void WaitTime()
+    {
+        playerSkills.canMove = true;
+        playerSkills.canDash = true;
     }
 
     public void OnTriggerExit2D(Collider2D other)

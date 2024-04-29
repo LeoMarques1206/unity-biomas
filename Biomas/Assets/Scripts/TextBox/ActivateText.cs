@@ -6,10 +6,14 @@ public class ActivateText : MonoBehaviour
 {
     public GameObject dialogue;
     private Dialogue dialogueScript;
+    public float espera = 2f;
+    private PlayerMovement playerMovement;
+    public GameObject player;
+    private bool entrou;
 
     void Start()
     {
-        
+        playerMovement = player.GetComponent<PlayerMovement>();
         dialogueScript = dialogue.GetComponent<Dialogue>();
        
         if (dialogueScript == null)
@@ -23,7 +27,29 @@ public class ActivateText : MonoBehaviour
         {
             dialogueScript.gameObject.SetActive(true);
             dialogueScript.StartDialogue();
+
+            if(!entrou)
+            {
+                playerMovement.canMove = false;
+                playerMovement.canDash = false;
+                entrou = true;
+                if(espera > 0){
+                    Invoke("WaitTime", espera);
+                } else {
+                    playerMovement.canMove = true;
+                    playerMovement.canDash = true;
+                }
+            }
+
+            
+            
         }
+    }
+
+    void WaitTime()
+    {
+        playerMovement.canMove = true;
+        playerMovement.canDash = true;
     }
 
     public void OnTriggerExit2D(Collider2D other)

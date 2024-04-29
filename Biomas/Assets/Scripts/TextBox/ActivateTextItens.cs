@@ -6,9 +6,9 @@ public class ActivateTextItens : MonoBehaviour
 {
     public GameObject dialogue;
     private Dialogue dialogueScript;
-
     public AudioSource src;
     public AudioClip sfx;
+    private bool entrou = false;
 
     void Start()
     {
@@ -24,11 +24,20 @@ public class ActivateTextItens : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            dialogueScript.gameObject.SetActive(true);
-            dialogueScript.StartDialogue();
-            src.clip = sfx;
-            src.Play();
-            Invoke("DestroyBox", 5f);
+    
+            if(entrou == false)
+            {
+                if(dialogueScript != null)
+                {
+                    dialogueScript.gameObject.SetActive(true);
+                    dialogueScript.StartDialogue();
+                }
+                
+                src.clip = sfx;
+                src.Play();
+                Invoke("DestroyBox", 5f);
+                entrou = true;
+            }      
         }
     }
 

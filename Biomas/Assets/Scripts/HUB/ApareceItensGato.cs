@@ -16,8 +16,9 @@ public class ApareceItensGato : MonoBehaviour
        playerMovement = player.GetComponent<PlayerMovement>();
 
        //TESTANDO
-       playerMovement.hasBola = true;
-       playerMovement.hasLeite = true;
+      // playerMovement.hasPeixe = true;
+      // playerMovement.hasBola = true;
+      // playerMovement.hasLeite = true;
 
     }
     void Update()

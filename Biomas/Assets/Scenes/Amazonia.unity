@@ -1442,7 +1442,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.0056991577, y: 0}
@@ -1482,7 +1482,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 77789511}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1d30219e34a8584c8b8095273f8d8bf, type: 3}
+  m_Script: {fileID: 11500000, guid: bdeeb87870267684a997b0812cc0c0f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 308563409}
@@ -8653,7 +8653,7 @@ Transform:
   m_GameObject: {fileID: 308563409}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.95, y: -3.62, z: 0}
+  m_LocalPosition: {x: -10.49, y: -3.63, z: 0}
   m_LocalScale: {x: 1.2717881, y: 1.327, z: 1.327}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12578,6 +12578,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: {fileID: 198709461}
+  espera: 0
+  player: {fileID: 308563409}
 --- !u!1 &576097960
 GameObject:
   m_ObjectHideFlags: 0
@@ -14731,7 +14733,7 @@ MonoBehaviour:
   lines:
   - "Bravo! Como recompensa por passar dos desafios da amaz\xF4nia, receba o Medalh\xE3o
     do sapo. Aperte espa\xE7o duas vezes seguidas e chegue em dist\xE2ncias inimaginaveis!"
-  textSpeed: 0.05
+  textSpeed: 0.015
 --- !u!114 &748838795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14843,7 +14845,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.25187764, y: 0.19890106}
+  m_Offset: {x: -0.25187764, y: 0.11091524}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -14854,7 +14856,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8203868, y: 0.9292271}
+  m_Size: {x: 0.8203868, y: 0.753255}
   m_EdgeRadius: 0
 --- !u!212 &749261771
 SpriteRenderer:
@@ -14936,6 +14938,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: {fileID: 2031687730}
+  espera: 2.5
+  player: {fileID: 308563409}
 --- !u!1 &757350470
 GameObject:
   m_ObjectHideFlags: 0
@@ -16183,7 +16187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfca224129e1a614289a82647600d16e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cenaParaInstanciar: Lobby
+  cenaParaInstanciar: IntroHUB
 --- !u!1 &829698170
 GameObject:
   m_ObjectHideFlags: 0
@@ -18506,6 +18510,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: {fileID: 748838790}
+  espera: 3
   player: {fileID: 308563409}
 --- !u!114 &1016785568
 MonoBehaviour:
@@ -21836,7 +21841,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -26053,7 +26058,7 @@ MonoBehaviour:
   textComponent: {fileID: 653823064}
   lines:
   - "Um medalh\xE3o foi adicionado ao seu invent\xE1rio (I)"
-  textSpeed: 0.05
+  textSpeed: 0.001
 --- !u!114 &1555388917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26219,7 +26224,7 @@ MonoBehaviour:
   textComponent: {fileID: 435728393}
   lines:
   - Um item foi adicionado ao seu inventario (I)
-  textSpeed: 0.05
+  textSpeed: 0.001
 --- !u!114 &1561940623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26593,7 +26598,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.015593529, y: -0.010395765}
+  m_Offset: {x: 0.0058908463, y: 0.041779816}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -26604,7 +26609,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.67773247, y: 0.54258657}
+  m_Size: {x: 0.8802967, y: 0.85564005}
   m_EdgeRadius: 0
 --- !u!114 &1582955942
 MonoBehaviour:
@@ -28610,13 +28615,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -32747,8 +32752,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -38156,7 +38161,7 @@ RectTransform:
   m_GameObject: {fileID: 2008837215}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.6240672, y: 1.6240672, z: 1.6240672}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1966437143}
@@ -38164,7 +38169,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 51, y: -362.88}
+  m_AnchoredPosition: {x: 1, y: -362.88}
   m_SizeDelta: {x: 1647.9, y: 354.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2008837217
@@ -38180,7 +38185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.3529412}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -38925,9 +38930,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 2075362947}
   lines:
-  - "Bem-vindo \xE0 Amaz\xF4nia! Aprecie de perto a beleza deste bioma, mas tenha
-    cuidado com as piranhas e as cobras, elas podem te machucar!"
-  textSpeed: 0.05
+  - "Bem-vindo \xE0 Amaz\xF4nia! Aprecie de perto a beleza deste bioma! Voc\xEA pode
+    deixar ele ainda mais bonito se retirar todo o lixo que est\xE1 espalhado! "
+  textSpeed: 0.015
 --- !u!114 &2031687735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39594,7 +39599,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535

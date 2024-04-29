@@ -32,7 +32,7 @@ public class DetectaIA : MonoBehaviour
                     Debug.Log("Trigger " + nomeDoTrigger + " clicado: " + hit.collider.gameObject.name);
                     
                     // Define o conteúdo do texto para indicar o nome do trigger
-                    conteudo.text = "Isto é " + nome;
+                    conteudo.text = "Isto é " +nome;
 
                     // Torna o canvas visível
                     canvasGroup.alpha = 1;

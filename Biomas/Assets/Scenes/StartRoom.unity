@@ -714,8 +714,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42
-  m_fontSizeBase: 42
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1347,7 +1347,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.189
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1521,7 +1521,7 @@ MonoBehaviour:
   textComponent: {fileID: 737870112}
   lines:
   - Aperte A e D ou use as setas do teclado para andar
-  textSpeed: 0.05
+  textSpeed: 0.015
 --- !u!114 &1632043895
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -27,7 +27,7 @@ public class MoveCameraOnButtonClick : MonoBehaviour
     void IniciaJogo()
     {
         Debug.Log("IniciaJogo"); //Mudar de cena
-        SceneManager.LoadScene("StartRoom");
+        SceneManager.LoadScene("StartLore");
     }
 
     void creditos()

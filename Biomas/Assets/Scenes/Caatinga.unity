@@ -6546,7 +6546,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.19607843}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -17006,7 +17006,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: -541179891, guid: f5f5d286de100d844851e75a6f21428a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -17045,7 +17045,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfca224129e1a614289a82647600d16e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cenaParaInstanciar: Lobby
+  cenaParaInstanciar: IntroHUB
 --- !u!61 &1006287152
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32617,6 +32617,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: {fileID: 606741437}
+  espera: 2
   player: {fileID: 996941754}
 --- !u!1 &1798212665
 GameObject:
@@ -33790,6 +33791,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d24af607d75812148afb89ff701991d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item: {fileID: 0}
   itemName: Leite
   sprite: {fileID: 21300000, guid: 166e1e03dc4d9b9488f9b1d06b0e8340, type: 3}
   itemDescription: "Faz violeta ter mem\xF3rias afetivas de casa"
@@ -37197,7 +37199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.19607843}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
