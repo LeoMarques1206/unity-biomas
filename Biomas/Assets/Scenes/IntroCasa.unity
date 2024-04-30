@@ -1621,7 +1621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24ca798d0c5bc0b42a50284a34eab0e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: Menu
+  scene: EndRoom
   canvasGroup: {fileID: 129435765}
   src: {fileID: 1376833767}
   sfx: {fileID: 8300000, guid: a98fcf99c8cc2404087bde4f2587d8ab, type: 3}
@@ -1793,7 +1793,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1171238877
 SpriteRenderer:
   m_ObjectHideFlags: 0

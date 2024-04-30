@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/IntroHUB.unity
     guid: 1636702fb75bb784f80f92a6791a43b4
+  - enabled: 1
+    path: Assets/Scenes/EndRoom.unity
+    guid: 1e43b66e1effba8439623c977c488e06
   m_configObjects: {}

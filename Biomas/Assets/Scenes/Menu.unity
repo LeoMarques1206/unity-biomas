@@ -613,7 +613,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 211e9526fd779414d81e4100a6baf45a, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.198
+  m_Volume: 0.117
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2291,9 +2291,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Jogo feito por:\n\n\nEduardo Miyake Dem\xE9trio Martins\n\nJo\xE3o Vitor
-    Lira\n\nLeonardo Gon\xE7alves Marques\n\nMaria Andr\xE9ia Formico Rodrigues\n\nJonas
-    Luz Jr."
+  m_text: "Jogo feito por:\n\n\nEduardo Miyake \n\nJo\xE3o Vitor Lira\n\nLeonardo
+    Marques\n\nAndr\xE9ia Formico \n\nJonas Luz "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

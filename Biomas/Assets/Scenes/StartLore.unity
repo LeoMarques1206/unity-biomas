@@ -2086,7 +2086,7 @@ MonoBehaviour:
   textComponent: {fileID: 880805638}
   lines:
   - "Mas depois de um tempo, Pedro come\xE7ou a deixar Violeta de lado, parando de
-    brincar e de dar comida para ela. "
+    dar aten\xE7\xE3o e comida para ela. "
   textSpeed: 0.015
 --- !u!114 &1192096131
 MonoBehaviour:
@@ -2816,7 +2816,7 @@ Animator:
   m_GameObject: {fileID: 1617126113}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d664be3a6b9840640a28eeab1524aedd, type: 2}
+  m_Controller: {fileID: 9100000, guid: ce6fd4aa8e1fe1648a43129bd65a72fb, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2960,7 +2960,7 @@ Transform:
   m_GameObject: {fileID: 1617126113}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.36, y: -3.18, z: 0}
+  m_LocalPosition: {x: -4.7300005, y: -3.22, z: 0}
   m_LocalScale: {x: 2.4541314, y: 2.560672, z: 2.560672}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3355,7 +3355,7 @@ Transform:
   m_GameObject: {fileID: 1681929189}
   serializedVersion: 2
   m_LocalRotation: {x: -0.008727774, y: 0, z: -0, w: 0.9999619}
-  m_LocalPosition: {x: -2.35, y: -3.5, z: 0.08}
+  m_LocalPosition: {x: -2.89, y: -3.5, z: 0.08}
   m_LocalScale: {x: 0.61520135, y: 0.62738824, z: 0.77903}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3657,7 +3657,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.3125, y: 0.53125}
+    oldSize: {x: 0.3125, y: 0.46875}
     newSize: {x: 0.3125, y: 0.53125}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -3734,7 +3734,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -268590503, guid: 4dd379750dcf9dd4999b124aff391a01, type: 3}
+  m_Sprite: {fileID: -103092853, guid: 4dd379750dcf9dd4999b124aff391a01, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3754,7 +3754,7 @@ Transform:
   m_GameObject: {fileID: 1848856586}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.79, y: 1.28, z: 0}
+  m_LocalPosition: {x: 2.66, y: 1.13, z: 0}
   m_LocalScale: {x: 2.4541314, y: 2.560672, z: 2.560672}
   m_ConstrainProportionsScale: 0
   m_Children: []

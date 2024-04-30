@@ -265,7 +265,7 @@ TextureImporter:
         width: 10
         height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -286,7 +286,7 @@ TextureImporter:
         width: 10
         height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -294,6 +294,69 @@ TextureImporter:
       bones: []
       spriteID: 748893d43765ccd4bb11e35e48909236
       internalID: -410164909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle - Jump_6
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 24
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98422823a2ff2614ebf2a744201e27eb
+      internalID: -103092853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle - Jump_7
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 33
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83d12044268050743ac7e0aba9b05a75
+      internalID: -424717177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle - Jump_8
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 32
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4f63f1a0705cb2459c89be8f2753888
+      internalID: -1783609537
       vertices: []
       indices: 
       edges: []
@@ -357,6 +420,9 @@ TextureImporter:
       Idle - Jump_3: 1398872137
       Idle - Jump_4: -504887816
       Idle - Jump_5: -410164909
+      Idle - Jump_6: -103092853
+      Idle - Jump_7: -424717177
+      Idle - Jump_8: -1783609537
       Idle_0: 223872878
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
