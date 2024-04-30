@@ -48,6 +48,13 @@ public class GuiaMedalhao : MonoBehaviour
                 skill.GiveItem();
                 playerSkills.saveSkillsData(1);
             }
+
+            if(playerSkills.MedalhaoCobra == false)
+            {   
+                skill.GiveItem();
+                playerSkills.saveSkillsData(2);
+            }
+
             Invoke("Load", 0.1f);
         }
     }
