@@ -150,7 +150,7 @@ public class InventoryManager : MonoBehaviour
                 skillSlot[i].skillSprite = sprite;
                 skillSlot[i].skillImage.sprite = sprite;
                 skillSlot[i].isFull = true;
-                skillSlot[i].skillImage.enabled = itemSlot[i].isFull;
+                skillSlot[i].skillImage.enabled = skillSlot[i].isFull;
             }
         }
 

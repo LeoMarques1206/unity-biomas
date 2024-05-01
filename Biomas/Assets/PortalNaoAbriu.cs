@@ -27,7 +27,7 @@ public class PortalNaoAbriu : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            texto.alpha = 0;
+            // texto.alpha = 0;
         }
     }
 }

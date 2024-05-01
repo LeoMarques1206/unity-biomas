@@ -92,6 +92,7 @@ public class SkillSlot : MonoBehaviour, IPointerClickHandler
     {
         skillImage.sprite = skillSprite;
         skillImage.enabled = isFull;
+        Debug.Log(isFull);
         // SkillDescriptionNameText.text = skillName;
         // SkillDescriptionText.text = skillDescription;
 

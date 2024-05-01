@@ -59,7 +59,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {           
-        // Debug.Log("Tem o peixe? " + hasPeixe); 
+        //Debug.Log("Tem o peixe? " + hasPeixe); 
         //Debug.Log(rb.velocity.y);
         if(isDashing)
         {
