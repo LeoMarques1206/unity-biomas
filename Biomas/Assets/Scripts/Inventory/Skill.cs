@@ -5,7 +5,7 @@ using UnityEngine;
 public class Skill : MonoBehaviour
 {
     [SerializeField] //faz a variavel ser visivel e editavel na unity
-    private string skillName;
+    public string skillName;
 
     [SerializeField]
     private Sprite sprite;

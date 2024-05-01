@@ -3467,12 +3467,13 @@ MonoBehaviour:
   canDash: 1
   dashingPower: 5
   dashingTime: 0.2
-  hasPeixe: 1
+  hasPeixe: 0
   hasBola: 0
-  hasLeite: 1
+  hasLeite: 0
   src: {fileID: 0}
   sfx: {fileID: 8300000, guid: 13fef59ec54a55a42ba16b257758dedd, type: 3}
   canMove: 1
+  hasWally: 1
   rb: {fileID: 976977123}
   groundCheck: {fileID: 903004940}
   groundLayer:

@@ -43,16 +43,18 @@ public class GuiaMedalhao : MonoBehaviour
                 }
             }
 
-            if(playerSkills.MedalhaoSapo == false)
+            if(playerSkills.MedalhaoSapo == false && skill.skillName == "Medalhao do sapo")
             {   
                 skill.GiveItem();
                 playerSkills.saveSkillsData(1);
+                playerSkills.MedalhaoSapo = true;
             }
 
-            if(playerSkills.MedalhaoCobra == false)
+            if(playerSkills.MedalhaoCobra == false && skill.skillName == "Medalhão da Cobra")
             {   
                 skill.GiveItem();
                 playerSkills.saveSkillsData(2);
+                playerSkills.MedalhaoCobra = true;
             }
 
             Invoke("Load", 0.1f);

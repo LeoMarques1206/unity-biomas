@@ -265,6 +265,7 @@ public class PlayerMovement : MonoBehaviour
          
         if(hasPeixe)
         {
+            Debug.Log("Entrou no save peixe");
             PlayerPrefs.SetInt("Peixe", 1);
         } 
         
@@ -309,12 +310,13 @@ public class PlayerMovement : MonoBehaviour
 
         if(PlayerPrefs.GetInt("Peixe") == 1)
         {
-            Debug.Log("ENTROU NESSA PARTE DO CODIGO");
+            Debug.Log("ENTROU NESSA PARTE DO CODIGO(PEIXE)");
             hasPeixe = true;
         }
 
         if(PlayerPrefs.GetInt("Leite") == 1)
         {
+            Debug.Log("ENTROU NESSA PARTE DO CODIGO(LEITE)");
             hasLeite = true;
         }
 
