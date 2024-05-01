@@ -113,10 +113,10 @@ TextureImporter:
       name: SnakeMedalion_0
       rect:
         serializedVersion: 2
-        x: 95
-        y: 59
-        width: 36
-        height: 27
+        x: 73
+        y: 32
+        width: 530
+        height: 399
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
