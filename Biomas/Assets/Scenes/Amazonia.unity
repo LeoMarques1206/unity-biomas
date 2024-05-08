@@ -7674,7 +7674,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1277461014}
   lines:
-  - "Aperte espa\xE7o para pular"
+  - Press space bar to jump
   textSpeed: 0.0000001
 --- !u!95 &198709466
 Animator:
@@ -10383,7 +10383,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_TargetDisplay: 0
 --- !u!1 &403041377
 GameObject:
@@ -15724,7 +15724,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: {fileID: 2031687730}
-  espera: 2.5
+  espera: 0
   player: {fileID: 308563409}
 --- !u!114 &749261774
 MonoBehaviour:
@@ -34262,7 +34262,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1981999572}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
