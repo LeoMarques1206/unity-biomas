@@ -34294,9 +34294,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b3b44893e4df57479142ebe20051e83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillName: Snake Medallion
+  skillName: "Medalh\xE3o da Cobra"
   sprite: {fileID: 319756796, guid: 3375f1ce3e8bf6b4097a065563a822a3, type: 3}
-  skillDescription: Press SHIFT to dash forward
+  skillDescription: "Aperte SHIFT para dar um avan\xE7o r\xE1pido"
   player: {fileID: 996941754}
 --- !u!114 &1791941172
 MonoBehaviour:
