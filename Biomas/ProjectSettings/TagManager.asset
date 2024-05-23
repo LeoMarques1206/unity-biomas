@@ -42,3 +42,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Rain
+    uniqueID: 3656244023
+    locked: 0
+  - name: Tileset/Objects
+    uniqueID: 2432635615
+    locked: 0
