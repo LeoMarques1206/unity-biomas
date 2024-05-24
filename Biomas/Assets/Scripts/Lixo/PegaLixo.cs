@@ -35,15 +35,21 @@ public class PegaLixo : MonoBehaviour
             Debug.Log("Nome do item: " + lixoNome);
         } 
         if (apertou && lixoNome == lixo.name)
+        {
+            src.clip = sfx;
+            src.Play();
+            Debug.Log("PegouLixo");
+            Destroy(gameObject);
+            Destroy(key);
+            contaLixo.numLixo++; // Incrementa o número de lixos
+            imageLixo.color = Color.white;
+
+            if(contaLixo.biomaAtual == "Amazonia")
             {
-                src.clip = sfx;
-                src.Play();
-                Debug.Log("PegouLixo");
-                Destroy(gameObject);
-                Destroy(key);
-                contaLixo.numLixo++; // Incrementa o número de lixos
-                imageLixo.color = Color.white;
+                PlayerPrefs.SetInt("NumLixosAmazonia", contaLixo.numLixo);
             }
+            
+        }
         // Debug.Log(contaLixo.numLixo);
     }
 

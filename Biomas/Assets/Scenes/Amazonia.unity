@@ -17976,10 +17976,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8daaa36637ca01a45864348da4b7c66c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  biomaAtual: ' '
   numLixo: 0
   lixoTotal: 0
   portalFinal: {fileID: 807133279}
   portalHUD: {fileID: 1286861159}
+  listaLixos:
+  - {fileID: 1923769832}
+  - {fileID: 484704184}
+  - {fileID: 854676074}
 --- !u!1 &927852990
 GameObject:
   m_ObjectHideFlags: 0
