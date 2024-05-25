@@ -7228,7 +7228,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.8864792, y: 0.89977777}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 59.87097, y: -65.760254}
+  m_AnchoredPosition: {x: 59.871094, y: -65.760254}
   m_SizeDelta: {x: -119.74, y: 131.5206}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &579699357
@@ -17338,10 +17338,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8daaa36637ca01a45864348da4b7c66c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  biomaAtual: ' '
   numLixo: 0
   lixoTotal: 3
   portalFinal: {fileID: 1006287147}
   portalHUD: {fileID: 193441216}
+  listaLixos:
+  - {fileID: 849417223}
+  - {fileID: 1565969088}
+  - {fileID: 1750650571}
 --- !u!4 &985646664
 Transform:
   m_ObjectHideFlags: 0

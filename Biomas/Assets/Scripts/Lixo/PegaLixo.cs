@@ -47,6 +47,10 @@ public class PegaLixo : MonoBehaviour
             if(contaLixo.biomaAtual == "Amazonia")
             {
                 PlayerPrefs.SetInt("NumLixosAmazonia", contaLixo.numLixo);
+            } 
+            else if(contaLixo.biomaAtual == "Caatinga")
+            {
+                PlayerPrefs.SetInt("NumLixosCaatinga", contaLixo.numLixo);
             }
             
         }
