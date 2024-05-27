@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     //Medalhoes
     public bool MedalhaoSapo = false;
     public bool MedalhaoCobra = false;
-
+    public bool MedalhaoMico = false;
     //Dash
     public bool canDash = true;
     private bool isDashing;
@@ -39,6 +39,15 @@ public class PlayerMovement : MonoBehaviour
     public bool hasWally = true;
 
     private int remainingJumps = 2; // Contador para pulos restantes
+
+    //WallJump
+    public Transform wallCheck;
+    bool isWallTouch;
+    bool isSliding;
+    public float wallSlidingSpeed;
+    public float wallJumpDuration;
+    public Vector2 wallJumpForce;
+    bool wallJumping;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
@@ -85,6 +94,20 @@ public class PlayerMovement : MonoBehaviour
                 remainingJumps--; // Se não estiver no chão e tiver o medalhão do sapo, use um pulo restante
             }
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+        } else if (Input.GetButtonDown("Jump") && isSliding)
+        {
+            wallJumping = true;
+            Invoke("StopWallJump", wallJumpDuration);
+        }
+        
+        isWallTouch = Physics2D.OverlapBox(wallCheck.position, new Vector2(0.1f, 0.55f), 0, groundLayer);
+        
+        if(isWallTouch && !IsGrounded() && horizontal != 0)
+        {
+            isSliding = true;
+        }
+        else{
+            isSliding = false;
         }
 
         if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
@@ -123,6 +146,11 @@ public class PlayerMovement : MonoBehaviour
         UpdateAnimator();
     }
 
+    void StopWallJump()
+    {
+        wallJumping = false;
+    }
+
     private void FixedUpdate()
     {
         if (!canMove)
@@ -139,9 +167,26 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool("Dash", false); 
         }
-        
 
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+
+        if(MedalhaoMico)
+        {
+            if(isSliding)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, wallSlidingSpeed, float.MaxValue));
+            }
+
+            if(wallJumping)
+            {
+                rb.velocity = new Vector2(-horizontal * wallJumpForce.x, wallJumpForce.y);
+            }
+            else
+            {
+                rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+            }
+        }
+            
     }
 
     private bool IsGrounded()
@@ -187,7 +232,7 @@ public class PlayerMovement : MonoBehaviour
     {
         canMove = false;
         animator.SetBool("Dead", true);
-        Debug.Log("Morreu");
+        //Debug.Log("Morreu");
         //Invoke("StaticBody", 0.2f);
         Invoke("RespawnPlayer", 0.7f);
         src.clip = sfx;
@@ -265,7 +310,7 @@ public class PlayerMovement : MonoBehaviour
          
         if(hasPeixe)
         {
-            Debug.Log("Entrou no save peixe");
+            //Debug.Log("Entrou no save peixe");
             PlayerPrefs.SetInt("Peixe", 1);
         } 
         
@@ -304,19 +349,19 @@ public class PlayerMovement : MonoBehaviour
         // Debug.Log("load debug leite " + PlayerPrefs.GetInt("Leite"));
         if(PlayerPrefs.GetInt("Bola") == 1)
         {
-            Debug.Log("entro");
+           // Debug.Log("entro");
             hasBola = true;
         }
 
         if(PlayerPrefs.GetInt("Peixe") == 1)
         {
-            Debug.Log("ENTROU NESSA PARTE DO CODIGO(PEIXE)");
+           // Debug.Log("ENTROU NESSA PARTE DO CODIGO(PEIXE)");
             hasPeixe = true;
         }
 
         if(PlayerPrefs.GetInt("Leite") == 1)
         {
-            Debug.Log("ENTROU NESSA PARTE DO CODIGO(LEITE)");
+            //Debug.Log("ENTROU NESSA PARTE DO CODIGO(LEITE)");
             hasLeite = true;
         }
 
