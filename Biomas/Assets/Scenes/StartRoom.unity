@@ -894,6 +894,7 @@ MonoBehaviour:
   deadFadeRenderer: {fileID: 0}
   MedalhaoSapo: 0
   MedalhaoCobra: 0
+  MedalhaoMico: 0
   canDash: 1
   dashingPower: 2
   dashingTime: 0.2
@@ -903,6 +904,11 @@ MonoBehaviour:
   src: {fileID: 0}
   sfx: {fileID: 8300000, guid: 13fef59ec54a55a42ba16b257758dedd, type: 3}
   canMove: 1
+  hasWally: 1
+  wallCheck: {fileID: 1551715097}
+  wallSlidingSpeed: 0
+  wallJumpDuration: 0
+  wallJumpForce: {x: 0, y: 0}
   rb: {fileID: 1350775950}
   groundCheck: {fileID: 1551715097}
   groundLayer:
