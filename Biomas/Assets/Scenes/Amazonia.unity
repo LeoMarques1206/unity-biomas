@@ -7500,7 +7500,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1277461014}
   lines:
-  - Press space bar to jump
+  - "Aperte espa\xE7o para pular"
   textSpeed: 0.0000001
 --- !u!95 &198709466
 Animator:
@@ -14553,7 +14553,6 @@ GameObject:
   - component: {fileID: 749261769}
   - component: {fileID: 749261768}
   - component: {fileID: 749261773}
-  - component: {fileID: 749261774}
   m_Layer: 0
   m_Name: Guia
   m_TagString: Player
@@ -14707,22 +14706,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: {fileID: 582963341}
-  espera: 0
+  espera: 2
   player: {fileID: 308563409}
---- !u!114 &749261774
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 749261767}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13079e451aed33b4ba36d48f0c4cbed2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  src: {fileID: 1689070938}
-  sfx: {fileID: 8300000, guid: e583b817289681443b338122247bd892, type: 3}
 --- !u!1 &757350470
 GameObject:
   m_ObjectHideFlags: 0
@@ -19811,8 +19796,8 @@ PolygonCollider2D:
       - {x: -10.376059, y: 2.9125385}
       - {x: -6.9418507, y: 2.9212418}
       - {x: -5.7430916, y: 2.9023063}
-      - {x: -0.93921995, y: 2.9661093}
-      - {x: -1.05335, y: -1.6869941}
+      - {x: -2.5665278, y: 2.806569}
+      - {x: -2.61684, y: -1.5434082}
       - {x: -10.373396, y: -1.7436757}
   m_UseDelaunayMesh: 0
 --- !u!4 &1171404792
@@ -26001,12 +25986,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -8.210417, y: -0.077020586}
-      - {x: -8.188517, y: 0.52143323}
-      - {x: -8.181135, y: 3.2693703}
+    - - {x: -9.773909, y: -0.10892856}
+      - {x: -9.783916, y: 0.7447889}
+      - {x: -9.792488, y: 3.2534163}
       - {x: -3.1998076, y: 3.0955853}
       - {x: -3.2130275, y: -1.7750459}
-      - {x: -8.103798, y: -1.6856728}
+      - {x: -9.826828, y: -1.5739951}
   m_UseDelaunayMesh: 0
 --- !u!114 &1564272465
 MonoBehaviour:
