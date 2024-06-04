@@ -10,10 +10,10 @@ namespace Unifor.Biomas.AI
     public class BiomasAIManager : MonoBehaviour
     {
         private const string GPT_SYSTEM = @"
-Você é um especilista em geografia e biologia brasileiras. 
-Especificamente, você conhece os biomas brasileiros, sua fauna e flora.
+Vocï¿½ ï¿½ um especilista em geografia e biologia brasileiras. 
+Especificamente, vocï¿½ conhece os biomas brasileiros, sua fauna e flora.
 ";
-        private const string USER_PROMPT = "Descreva, em um a dois parágrafos, #";
+        private const string USER_PROMPT = "Descreva, em um a dois parï¿½grafos, #";
 
         [Header("GPT Setup")]
         [SerializeField]
@@ -26,7 +26,7 @@ Especificamente, você conhece os biomas brasileiros, sua fauna e flora.
 
         [Header("Cache Setup")]
         [SerializeField]
-        private string _predefinedDataResource = "predefined.json";
+        private string _predefinedDataResource;
 
         private BiomasCache _cache;
         private BiomasCompletionService _completionService;
@@ -39,6 +39,7 @@ Especificamente, você conhece os biomas brasileiros, sua fauna e flora.
 
             // Load the predefined BiomasCache.
             var data = BiomasResources.LoadDataResource(_predefinedDataResource);
+            Debug.Log(_predefinedDataResource.ToString());
             _cache = new BiomasCache(data);
         }
 

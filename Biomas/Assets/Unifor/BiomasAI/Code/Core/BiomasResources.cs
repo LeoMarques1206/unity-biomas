@@ -43,6 +43,7 @@ namespace Unifor.Biomas
                 try
                 {
                     json = File.ReadAllText(path);
+                    Debug.Log(json);
                 }
                 catch (Exception)
                 {
@@ -57,7 +58,9 @@ namespace Unifor.Biomas
                 json = resource.text;
             }
 
+            Debug.Log(json);
             BiomesData data = JsonUtility.FromJson<BiomesData>(json);
+            
             return data;
         }
 

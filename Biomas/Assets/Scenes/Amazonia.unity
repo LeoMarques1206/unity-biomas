@@ -11719,7 +11719,7 @@ MonoBehaviour:
   canvasGroup: {fileID: 1981999577}
   conteudo: {fileID: 1966437144}
   nomeDoTrigger: CopoLeiteIA
-  nome: Copo de leite
+  nome: Copo-de-leite
   bioma: "Amaz\xF4nia"
   IA: {fileID: 2047030907}
 --- !u!1 &571167406
@@ -33558,7 +33558,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _useGptAtRuntime: 0
   _gptApiKeyResource: GPT_API_PATH
-  _predefinedDataResource: predefined
+  _predefinedDataResource: amazonia
 --- !u!4 &2047030909
 Transform:
   m_ObjectHideFlags: 0

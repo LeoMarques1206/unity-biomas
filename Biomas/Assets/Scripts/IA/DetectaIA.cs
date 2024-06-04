@@ -35,7 +35,7 @@ public class DetectaIA : MonoBehaviour
                 // Verifica se o Collider2D atingido é o trigger desejado
                 if (hit.collider.isTrigger && hit.collider.gameObject.name == nomeDoTrigger)
                 {
-                    Debug.Log("Trigger " + nomeDoTrigger + " clicado: " + hit.collider.gameObject.name);
+                    Debug.Log("Trigger " + nomeDoTrigger + " clicado: " + hit.collider.gameObject.name + " " + nome);
 
                     OnWildLifeButtonClicked(bioma, nome);
                     // conteudo.text = "Isto é " + nome;

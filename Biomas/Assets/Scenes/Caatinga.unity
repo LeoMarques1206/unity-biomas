@@ -11571,7 +11571,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _useGptAtRuntime: 0
   _gptApiKeyResource: GPT_API_PATH
-  _predefinedDataResource: predefined
+  _predefinedDataResource: caatinga
 --- !u!4 &956540105
 Transform:
   m_ObjectHideFlags: 0

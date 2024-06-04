@@ -1,0 +1,26 @@
+{
+    "Biomes": [
+    {
+        "Name": "MataAtlantica",
+        "Description": "A Mata Atlântica é um bioma diversificado e exuberante que abrange uma variedade de ecossistemas, incluindo florestas tropicais úmidas, manguezais e restingas ao longo da costa atlântica do Brasil. Reconhecida por sua riqueza em biodiversidade, abriga uma grande variedade de espécies de plantas e animais, muitas das quais são endêmicas e ameaçadas de extinção.",
+        "Wildlife": [
+            {
+            "Name": "Mico-leao",
+            "Description": "O mico-leão, primata emblemático da Mata Atlântica, destaca-se pela pelagem dourada e juba. Ameaçado pela perda de habitat, sua conservação é vital para a biodiversidade local."
+            },
+            {
+            "Name": "Coruja",
+            "Description": "Corujas são predadores noturnos encontrados na Mata Atlântica, desempenhando um papel crucial no controle de populações de roedores e insetos. Adaptadas ao ambiente florestal, possuem penas camufladas e uma audição aguçada para caçar eficientemente durante a noite."
+            },
+            {
+            "Name": "Cobra",
+            "Description": "Cobras na Mata Atlântica são predadoras vitais, regulando populações de presas e contribuindo para o equilíbrio do ecossistema. Adaptadas a uma variedade de habitats, desempenham um papel importante na cadeia alimentar da região."
+            },
+            {
+                "Name": "Parede",
+                "Description": "paredes cobertas de vegetação exuberante, oferecendo uma oportunidade de escalada estratégica. Com habilidade, você pode utilizar essas superfícies naturais para alcançar novas alturas e desvendar segredos ocultos."
+            }
+        ]
+    }
+    ]
+  }
