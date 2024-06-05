@@ -13,8 +13,8 @@ TagManager:
   - Water
   - UI
   - noCollide
-  - 
-  - 
+  - Alpha
+  - Cat
   - 
   - 
   - 
@@ -47,4 +47,13 @@ TagManager:
     locked: 0
   - name: Tileset/Objects
     uniqueID: 2432635615
+    locked: 0
+  - name: Alpha
+    uniqueID: 2894743823
+    locked: 0
+  - name: Cat
+    uniqueID: 2511640585
+    locked: 0
+  - name: UI
+    uniqueID: 2650802445
     locked: 0
