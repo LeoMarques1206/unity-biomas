@@ -32,13 +32,14 @@ public class GuiaMedalhao : MonoBehaviour
         
              if(!entrou)
             {
-                playerSkills.canMove = false;
+                playerSkills.rb.constraints = RigidbodyConstraints2D.FreezePositionX;
                 playerSkills.canDash = false;
                 entrou = true;
                 if(espera > 0){
                     Invoke("WaitTime", espera);
                 } else {
-                    playerSkills.canMove = true;
+                    playerSkills.rb.constraints = RigidbodyConstraints2D.None;
+                    playerSkills.rb.constraints = RigidbodyConstraints2D.FreezeRotation;
                     playerSkills.canDash = true;
                 }
             }
@@ -76,6 +77,8 @@ public class GuiaMedalhao : MonoBehaviour
     {
         playerSkills.canMove = true;
         playerSkills.canDash = true;
+        playerSkills.rb.constraints = RigidbodyConstraints2D.None;
+        playerSkills.rb.constraints = RigidbodyConstraints2D.FreezeRotation;
     }
 
     public void OnTriggerExit2D(Collider2D other)

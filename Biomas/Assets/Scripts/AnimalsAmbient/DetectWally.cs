@@ -50,7 +50,8 @@ public class DetectWally : MonoBehaviour
         {
             dialogueScript.gameObject.SetActive(true);
             dialogueScript.StartDialogue();
-            playerMovement.canMove = false;
+            //playerMovement.canMove = false;
+            playerMovement.rb.constraints = RigidbodyConstraints2D.FreezePositionX;
             playerMovement.canDash = false;
             playerMovement.hasWally = false;
             Invoke("MoveWally", 2f);
@@ -83,6 +84,9 @@ public class DetectWally : MonoBehaviour
     public void DestroyBox2()
     {
         Destroy(dialogue2);
-        playerMovement.canMove = true;
+        //playerMovement.canMove = true;
+        playerMovement.canDash = true;
+        playerMovement.rb.constraints = RigidbodyConstraints2D.None;
+        playerMovement.rb.constraints = RigidbodyConstraints2D.FreezeRotation;
     }
 }

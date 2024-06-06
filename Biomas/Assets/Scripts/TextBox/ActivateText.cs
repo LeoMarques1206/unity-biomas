@@ -30,14 +30,19 @@ public class ActivateText : MonoBehaviour
 
             if(!entrou)
             {
-                playerMovement.canMove = false;
+                //playerMovement.canMove = false;
+                playerMovement.rb.constraints = RigidbodyConstraints2D.FreezePositionX;
                 playerMovement.canDash = false;
                 entrou = true;
                 if(espera > 0){
                     Invoke("WaitTime", espera);
                 } else {
+                    playerMovement.rb.constraints = RigidbodyConstraints2D.None;
+                    playerMovement.rb.constraints = RigidbodyConstraints2D.FreezeRotation;
                     playerMovement.canMove = true;
                     playerMovement.canDash = true;
+                    //playerMovement.rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+                    
                 }
             }
 
@@ -50,6 +55,8 @@ public class ActivateText : MonoBehaviour
     {
         playerMovement.canMove = true;
         playerMovement.canDash = true;
+        playerMovement.rb.constraints = RigidbodyConstraints2D.None;
+        playerMovement.rb.constraints = RigidbodyConstraints2D.FreezeRotation;
     }
 
     public void OnTriggerExit2D(Collider2D other)

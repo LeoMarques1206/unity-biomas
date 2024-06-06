@@ -49,7 +49,7 @@ public class PlayerMovement : MonoBehaviour
     public Vector2 wallJumpForce;
     bool wallJumping;
 
-    [SerializeField] private Rigidbody2D rb;
+    [SerializeField] public Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private TrailRenderer tr;
