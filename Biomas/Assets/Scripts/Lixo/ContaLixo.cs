@@ -15,6 +15,8 @@ public class ContaLixo : MonoBehaviour
 
     public GameObject[] listaLixos;
 
+    public Image[] listaLixosImagens;
+
     void Start()
     {
         biomaAtual = SceneManager.GetActiveScene().name;
@@ -29,10 +31,15 @@ public class ContaLixo : MonoBehaviour
             numLixo = PlayerPrefs.GetInt("NumLixosCaatinga");
 
         }
+        else if (biomaAtual == "MataAtlantica")
+        {
+            numLixo = PlayerPrefs.GetInt("NumLixosMataAtlantica");
+        }
 
         for(int i = 0; i < numLixo; i++)
         {
             listaLixos[i].SetActive(false);
+            listaLixosImagens[i].color = Color.white;
         }
 
     }

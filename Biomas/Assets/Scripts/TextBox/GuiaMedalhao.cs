@@ -57,6 +57,13 @@ public class GuiaMedalhao : MonoBehaviour
                 playerSkills.MedalhaoCobra = true;
             }
 
+            if(playerSkills.MedalhaoMico == false && skill.skillName == "Medalhão do Mico")
+            {
+                skill.GiveItem();
+                playerSkills.saveSkillsData(3);
+                playerSkills.MedalhaoMico = true;
+            }
+
             Invoke("Load", 0.1f);
         }
     }

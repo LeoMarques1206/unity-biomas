@@ -298,6 +298,10 @@ public class PlayerMovement : MonoBehaviour
         {
             PlayerPrefs.SetInt("SkillCobra", 1);
         }
+        else if(medalhao == 3)
+        {
+            PlayerPrefs.SetInt("SkillMico", 1);
+        }
         PlayerPrefs.Save();
     }
 
@@ -338,6 +342,11 @@ public class PlayerMovement : MonoBehaviour
         if(PlayerPrefs.GetInt("SkillCobra") == 1)
         {
             MedalhaoCobra = true;
+        }
+
+        if(PlayerPrefs.GetInt("SkillMico") == 1)
+        {
+            MedalhaoMico = true;
         }
     }
 

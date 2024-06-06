@@ -52,6 +52,10 @@ public class PegaLixo : MonoBehaviour
             {
                 PlayerPrefs.SetInt("NumLixosCaatinga", contaLixo.numLixo);
             }
+            else if(contaLixo.biomaAtual == "MataAtlantica")
+            {
+                PlayerPrefs.SetInt("NumLixosMataAtlantica", contaLixo.numLixo);
+            }
             
         }
         // Debug.Log(contaLixo.numLixo);
