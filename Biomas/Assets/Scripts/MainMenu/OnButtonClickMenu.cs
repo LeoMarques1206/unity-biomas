@@ -24,20 +24,34 @@ public class MoveCameraOnButtonClick : MonoBehaviour
         button.onClick.AddListener(FazAlgo);
     }
 
-    void IniciaJogo()
+    public void IniciaJogo()
     {
         Debug.Log("IniciaJogo"); //Mudar de cena
         PlayerPrefs.DeleteAll();
         SceneManager.LoadScene("StartLore");
     }
 
-    void creditos()
+    public void creditos()
     {
         mainMenu.alpha = 0f;
         cena.alpha = 1f;
         apertou = false;
         TranslateObjectDown(pata2, 3.7f);
         cat.SetActive(false);
+    }
+
+    public void ApertaCreditos()
+    {
+        TranslateObjectUp(pata2, 3.7f);
+        Invoke("creditos", 0.3f);
+        apertou = true;
+    }
+
+    public void ApertaJogar()
+    {
+        TranslateObjectUp(pata1, 3.7f);
+        Invoke("IniciaJogo", 0.5f);
+        apertou = true;
     }
 
     void FazAlgo()

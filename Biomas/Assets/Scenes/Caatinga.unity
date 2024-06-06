@@ -1622,7 +1622,7 @@ Transform:
   m_GameObject: {fileID: 133409102}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.23485905, w: 0.9720295}
-  m_LocalPosition: {x: -0, y: 0.14, z: 0}
+  m_LocalPosition: {x: -0.008, y: 0.124, z: 0}
   m_LocalScale: {x: 1.0333519, y: 1.094206, z: 1.3453903}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8012,7 +8012,8 @@ MonoBehaviour:
   textComponent: {fileID: 1190827087}
   lines:
   - "A partir desse ponto, \xE9 muito perigoso explorar sem maneiras de se movimentar
-    r\xE1pido. Receba o Medalh\xE3o da cobra!"
+    r\xE1pido. Receba o Medalh\xE3o da cobra! Aperte SHIFT para dar um avan\xE7o
+    r\xE1pido!"
   textSpeed: 0.02
 --- !u!114 &606741442
 MonoBehaviour:
