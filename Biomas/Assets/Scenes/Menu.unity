@@ -2287,9 +2287,9 @@ MonoBehaviour:
   pata1: {fileID: 1016105611}
   pata2: {fileID: 1839353225}
   pata3: {fileID: 121772121}
-  mainMenu: {fileID: 0}
-  cena: {fileID: 0}
-  cat: {fileID: 0}
+  mainMenu: {fileID: 1989438882}
+  cena: {fileID: 1723359436}
+  cat: {fileID: 526733997}
   moveSpeed: 2
 --- !u!1 &1756567821
 GameObject:

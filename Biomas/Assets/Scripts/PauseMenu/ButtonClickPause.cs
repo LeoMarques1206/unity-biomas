@@ -3,10 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class ButtonClickPause : MonoBehaviour
 {
-    private string sceneName = "Menu";
-
-    public void ChangeScene(string sceneName)
+    public void ChangeScene()
     {
-        SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene("Menu");
     }
 }

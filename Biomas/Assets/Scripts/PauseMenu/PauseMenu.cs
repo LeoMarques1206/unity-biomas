@@ -8,10 +8,9 @@ public class PauseMenu : MonoBehaviour
 
     void Start()
     {
-        // Obtém o componente CanvasGroup do objeto de pausa
+
         canvasGroup = pauseMenuUI.GetComponent<CanvasGroup>();
         
-        // Inicialmente, o menu de pausa está invisível e não interativo
         Resume();
     }
 

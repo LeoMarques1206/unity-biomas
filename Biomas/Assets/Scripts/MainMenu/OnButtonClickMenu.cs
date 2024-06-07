@@ -17,9 +17,9 @@ public class MoveCameraOnButtonClick : MonoBehaviour
 
     public float moveSpeed = 1.5f;
     private bool apertou = false;
-
     void Start()
     {
+        Time.timeScale = 1f; 
         Button button = GetComponent<Button>();
         button.onClick.AddListener(FazAlgo);
     }

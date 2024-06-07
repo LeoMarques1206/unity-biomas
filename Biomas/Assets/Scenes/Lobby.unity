@@ -309,7 +309,8 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5054407847117364242, guid: e54c34368ed30f441877a6a135da894c, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e54c34368ed30f441877a6a135da894c, type: 3}
@@ -6149,7 +6150,7 @@ MonoBehaviour:
   portalFinal: {fileID: 1777140610}
   player: {fileID: 976977118}
   livro: {fileID: 95042048}
-  pc: {fileID: 0}
+  pc: {fileID: 626722069}
   scene: IntroCasa
   src: {fileID: 898702368}
   sfx: {fileID: 8300000, guid: 55a89afb033cbcd48a424668f3bfd0f5, type: 3}

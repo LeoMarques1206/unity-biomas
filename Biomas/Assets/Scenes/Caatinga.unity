@@ -3242,6 +3242,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 5054407847117364242, guid: e54c34368ed30f441877a6a135da894c, type: 3}
+    - {fileID: 4353563528436707825, guid: e54c34368ed30f441877a6a135da894c, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 5435814106304407883, guid: e54c34368ed30f441877a6a135da894c, type: 3}
       insertIndex: 0
@@ -4732,7 +4733,7 @@ MonoBehaviour:
   canvasGroup: {fileID: 518809391}
   conteudo: {fileID: 183044652}
   nomeDoTrigger: Armadillo2
-  nome: Tatu-Bola
+  nome: Armadillo
   bioma: Caatinga
   IA: {fileID: 956540103}
 --- !u!1 &403041377
@@ -8655,7 +8656,7 @@ MonoBehaviour:
   canvasGroup: {fileID: 518809391}
   conteudo: {fileID: 183044652}
   nomeDoTrigger: Armadillo
-  nome: Tatu-Bola
+  nome: Armadillo
   bioma: Caatinga
   IA: {fileID: 956540103}
 --- !u!1 &678748604
@@ -9293,7 +9294,7 @@ MonoBehaviour:
   canvasGroup: {fileID: 518809391}
   conteudo: {fileID: 183044652}
   nomeDoTrigger: Escorpiao
-  nome: "Escorpi\xE3o"
+  nome: Escorpiao
   bioma: Caatinga
   IA: {fileID: 956540103}
 --- !u!1 &731749624
@@ -27540,7 +27541,7 @@ GameObject:
   - component: {fileID: 1686104165}
   - component: {fileID: 1686104164}
   m_Layer: 0
-  m_Name: AraraIA (1)
+  m_Name: AraraIA2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27620,7 +27621,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 518809391}
   conteudo: {fileID: 183044652}
-  nomeDoTrigger: AraraIA
+  nomeDoTrigger: AraraIA2
   nome: Arara-Azul
   bioma: Caatinga
   IA: {fileID: 956540103}
