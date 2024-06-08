@@ -1382,7 +1382,7 @@ GameObject:
   - component: {fileID: 96241946}
   - component: {fileID: 96241947}
   m_Layer: 0
-  m_Name: Coruja
+  m_Name: Coruja0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1471,7 +1471,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 1981999577}
   conteudo: {fileID: 1966437144}
-  nomeDoTrigger: Coruja
+  nomeDoTrigger: Coruja0
   nome: Coruja
   bioma: MataAtlantica
   IA: {fileID: 2047030907}
@@ -1671,7 +1671,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &100281684
 Transform:
   m_ObjectHideFlags: 0
@@ -1744,12 +1744,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 094ebc786b45e2549a9f26c8df071e3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasGroup: {fileID: 0}
-  conteudo: {fileID: 0}
+  canvasGroup: {fileID: 1981999577}
+  conteudo: {fileID: 1966437144}
   nomeDoTrigger: CobraIA
   nome: Cobra
-  bioma: "Amaz\xF4nia"
-  IA: {fileID: 0}
+  bioma: MataAtlantica
+  IA: {fileID: 2047030907}
 --- !u!1 &106562896
 GameObject:
   m_ObjectHideFlags: 0
@@ -8445,7 +8445,7 @@ GameObject:
   - component: {fileID: 151052611}
   - component: {fileID: 151052610}
   m_Layer: 0
-  m_Name: Coruja
+  m_Name: Coruja2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8527,9 +8527,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 1981999577}
   conteudo: {fileID: 1966437144}
-  nomeDoTrigger: 
-  nome: 
-  bioma: 
+  nomeDoTrigger: Coruja2
+  nome: Coruja
+  bioma: MataAtlantica
   IA: {fileID: 2047030907}
 --- !u!212 &151052612
 SpriteRenderer:
@@ -8792,8 +8792,10 @@ GameObject:
   - component: {fileID: 163898328}
   - component: {fileID: 163898327}
   - component: {fileID: 163898326}
+  - component: {fileID: 163898330}
+  - component: {fileID: 163898329}
   m_Layer: 0
-  m_Name: MicoLeao_0 (2)
+  m_Name: MicoLeao_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8887,6 +8889,69 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1552382790}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 21.565}
+--- !u!61 &163898329
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163898325}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.27, y: 0.3}
+    newSize: {x: 0.27, y: 0.3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.27, y: 0.3}
+  m_EdgeRadius: 0
+--- !u!114 &163898330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163898325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 094ebc786b45e2549a9f26c8df071e3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 1981999577}
+  conteudo: {fileID: 1966437144}
+  nomeDoTrigger: MicoLeao_2
+  nome: Mico-leao
+  bioma: MataAtlantica
+  IA: {fileID: 2047030907}
 --- !u!1 &169251360
 GameObject:
   m_ObjectHideFlags: 0
@@ -9077,6 +9142,8 @@ GameObject:
   - component: {fileID: 170947649}
   - component: {fileID: 170947648}
   - component: {fileID: 170947647}
+  - component: {fileID: 170947651}
+  - component: {fileID: 170947650}
   m_Layer: 0
   m_Name: MicoLeao_0
   m_TagString: Untagged
@@ -9172,6 +9239,69 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1552382790}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -24.421}
+--- !u!114 &170947650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170947646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 094ebc786b45e2549a9f26c8df071e3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 1981999577}
+  conteudo: {fileID: 1966437144}
+  nomeDoTrigger: MicoLeao_0
+  nome: Mico-leao
+  bioma: MataAtlantica
+  IA: {fileID: 2047030907}
+--- !u!61 &170947651
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170947646}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.27, y: 0.3}
+    newSize: {x: 0.27, y: 0.3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.27, y: 0.3}
+  m_EdgeRadius: 0
 --- !u!1 &171482856
 GameObject:
   m_ObjectHideFlags: 0
@@ -19546,8 +19676,10 @@ GameObject:
   - component: {fileID: 718796129}
   - component: {fileID: 718796128}
   - component: {fileID: 718796127}
+  - component: {fileID: 718796131}
+  - component: {fileID: 718796130}
   m_Layer: 0
-  m_Name: MicoLeao_0 (1)
+  m_Name: MicoLeao_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19641,6 +19773,69 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1552382790}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 21.565}
+--- !u!114 &718796130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718796126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 094ebc786b45e2549a9f26c8df071e3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 1981999577}
+  conteudo: {fileID: 1966437144}
+  nomeDoTrigger: MicoLeao_1
+  nome: Mico-leao
+  bioma: MataAtlantica
+  IA: {fileID: 2047030907}
+--- !u!61 &718796131
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718796126}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.27, y: 0.3}
+    newSize: {x: 0.27, y: 0.3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.27, y: 0.3}
+  m_EdgeRadius: 0
 --- !u!1 &730991189
 GameObject:
   m_ObjectHideFlags: 0
@@ -27698,8 +27893,10 @@ GameObject:
   - component: {fileID: 1157187791}
   - component: {fileID: 1157187790}
   - component: {fileID: 1157187789}
+  - component: {fileID: 1157187793}
+  - component: {fileID: 1157187792}
   m_Layer: 0
-  m_Name: MicoLeao_0 (3)
+  m_Name: MicoLeao_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27793,6 +27990,69 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1552382790}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -30.883}
+--- !u!114 &1157187792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157187788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 094ebc786b45e2549a9f26c8df071e3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 1981999577}
+  conteudo: {fileID: 1966437144}
+  nomeDoTrigger: MicoLeao_3
+  nome: Mico-leao
+  bioma: MataAtlantica
+  IA: {fileID: 2047030907}
+--- !u!61 &1157187793
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157187788}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.27, y: 0.3}
+    newSize: {x: 0.27, y: 0.3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.27, y: 0.3}
+  m_EdgeRadius: 0
 --- !u!1 &1169451751
 GameObject:
   m_ObjectHideFlags: 0
@@ -28029,7 +28289,7 @@ GameObject:
   - component: {fileID: 1171900967}
   - component: {fileID: 1171900966}
   m_Layer: 0
-  m_Name: Coruja (1)
+  m_Name: Coruja3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28111,9 +28371,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 1981999577}
   conteudo: {fileID: 1966437144}
-  nomeDoTrigger: 
-  nome: 
-  bioma: 
+  nomeDoTrigger: Coruja3
+  nome: Coruja
+  bioma: MataAtlantica
   IA: {fileID: 2047030907}
 --- !u!212 &1171900968
 SpriteRenderer:
@@ -35207,7 +35467,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1675657944
 Transform:
   m_ObjectHideFlags: 0
@@ -35280,12 +35540,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 094ebc786b45e2549a9f26c8df071e3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasGroup: {fileID: 0}
-  conteudo: {fileID: 0}
+  canvasGroup: {fileID: 1981999577}
+  conteudo: {fileID: 1966437144}
   nomeDoTrigger: CobraIA
   nome: Cobra
-  bioma: "Amaz\xF4nia"
-  IA: {fileID: 0}
+  bioma: MataAtlantica
+  IA: {fileID: 2047030907}
 --- !u!1 &1676942413
 GameObject:
   m_ObjectHideFlags: 0
@@ -40731,7 +40991,7 @@ GameObject:
   - component: {fileID: 1962478528}
   - component: {fileID: 1962478527}
   m_Layer: 0
-  m_Name: Coruja (2)
+  m_Name: Coruja5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40813,9 +41073,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 1981999577}
   conteudo: {fileID: 1966437144}
-  nomeDoTrigger: 
-  nome: 
-  bioma: 
+  nomeDoTrigger: Coruja5
+  nome: Coruja
+  bioma: MataAtlantica
   IA: {fileID: 2047030907}
 --- !u!212 &1962478529
 SpriteRenderer:
@@ -41718,8 +41978,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1998188707}
   - component: {fileID: 1998188708}
+  - component: {fileID: 1998188710}
+  - component: {fileID: 1998188709}
   m_Layer: 0
-  m_Name: Coruja2 (1)
+  m_Name: Coruja4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41793,6 +42055,69 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1998188709
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998188706}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.625, y: 0.90625}
+    newSize: {x: 0.625, y: 0.90625}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.625, y: 0.90625}
+  m_EdgeRadius: 0
+--- !u!114 &1998188710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998188706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 094ebc786b45e2549a9f26c8df071e3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 1981999577}
+  conteudo: {fileID: 1966437144}
+  nomeDoTrigger: Coruja4
+  nome: Coruja
+  bioma: MataAtlantica
+  IA: {fileID: 2047030907}
 --- !u!1 &2008837215
 GameObject:
   m_ObjectHideFlags: 0
@@ -41996,8 +42321,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2036124835}
   - component: {fileID: 2036124834}
+  - component: {fileID: 2036124837}
+  - component: {fileID: 2036124836}
   m_Layer: 0
-  m_Name: Coruja2
+  m_Name: Coruja1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42071,6 +42398,69 @@ Transform:
   - {fileID: 368598844}
   m_Father: {fileID: 1838338169}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2036124836
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036124833}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.625, y: 0.90625}
+    newSize: {x: 0.625, y: 0.90625}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.625, y: 0.90625}
+  m_EdgeRadius: 0
+--- !u!114 &2036124837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036124833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 094ebc786b45e2549a9f26c8df071e3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 1981999577}
+  conteudo: {fileID: 1966437144}
+  nomeDoTrigger: Coruja1
+  nome: Coruja
+  bioma: MataAtlantica
+  IA: {fileID: 2047030907}
 --- !u!1 &2038760108
 GameObject:
   m_ObjectHideFlags: 0
