@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
     public bool canMove = true;
     //se o wally esta na cena
     public bool hasWally = true;
-     public bool hasViolet = true;
+    public bool hasViolet = true;
 
     private int remainingJumps = 2; // Contador para pulos restantes
 
@@ -329,6 +329,11 @@ public class PlayerMovement : MonoBehaviour
             PlayerPrefs.SetInt("Wally", 1);
         }
 
+        if(!hasViolet)  
+        {   
+            PlayerPrefs.SetInt("Violeta", 1);
+        }
+
         PlayerPrefs.Save();
     }
 
@@ -378,6 +383,11 @@ public class PlayerMovement : MonoBehaviour
         if(PlayerPrefs.GetInt("Wally") == 1)
         {
             hasWally = false;
+        }
+
+        if(PlayerPrefs.GetInt("Violeta") == 1)
+        {
+            hasViolet = false;
         }
     }
 
