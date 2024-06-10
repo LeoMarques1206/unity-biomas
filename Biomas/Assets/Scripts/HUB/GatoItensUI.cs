@@ -12,6 +12,7 @@ public class GatoItensUI : MonoBehaviour
     public GameObject livro;
     public GameObject pc;
     public string scene;
+    public Animator catAnimator;
 
     public AudioSource src;
     public AudioClip sfx;
@@ -33,6 +34,8 @@ public class GatoItensUI : MonoBehaviour
                 portalFinal.SetActive(true);
                 playerMovement.canMove = false;
                 playerMovement.canDash = false;
+                catAnimator.SetBool("Lambe",true);
+                pc.SetActive(true);
                 Invoke("Fim", 2f);
                 
             }
@@ -57,7 +60,7 @@ public class GatoItensUI : MonoBehaviour
         pc.SetActive(false);
         src.clip = sfx;
         src.Play();
-        Invoke("SceneTransition", 1f);
+        Invoke("SceneTransition", 2.5f);
     }
 
     void SceneTransition()

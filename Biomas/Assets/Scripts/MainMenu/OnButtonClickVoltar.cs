@@ -7,6 +7,7 @@ public class OnButtonClickVoltar : MonoBehaviour
 {
     public CanvasGroup mainMenu;
     public CanvasGroup cena;
+    public CanvasGroup cenaDicas;
     public GameObject cat;
     
     void Start()
@@ -17,8 +18,9 @@ public class OnButtonClickVoltar : MonoBehaviour
 
     public void Clicou()
     {
-        mainMenu.alpha = 1f;
         cena.alpha = 0f;
+        mainMenu.alpha = 1f;
+        cenaDicas.alpha = 0f;
         Debug.Log("Clicou");
         cat.SetActive(true);
     }

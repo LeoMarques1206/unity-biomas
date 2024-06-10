@@ -13,6 +13,8 @@ public class MoveCameraOnButtonClick : MonoBehaviour
 
     public CanvasGroup mainMenu;
     public CanvasGroup cena;
+
+    public CanvasGroup cenaDicas;
     public GameObject cat;
 
     public float moveSpeed = 1.5f;
@@ -37,6 +39,15 @@ public class MoveCameraOnButtonClick : MonoBehaviour
         cena.alpha = 1f;
         apertou = false;
         TranslateObjectDown(pata2, 3.7f);
+        cat.SetActive(false);
+    }
+
+    public void dicas()
+    {
+        mainMenu.alpha = 0f;
+        cenaDicas.alpha = 1f;
+        apertou = false;
+        TranslateObjectDown(pata3, 3.7f);
         cat.SetActive(false);
     }
 
@@ -67,10 +78,10 @@ public class MoveCameraOnButtonClick : MonoBehaviour
             TranslateObjectUp(pata2, 3.7f);
             Invoke("creditos", 0.3f);
             apertou = true;
-        } else if (buttonName == "opcoes" && apertou == false)
+        } else if (buttonName == "dicas" && apertou == false)
         {
             TranslateObjectUp(pata3, 3.7f);   
-            //Invoke("Opcoes", 1);
+            Invoke("dicas", 1);
             apertou = true;
         }
     }
