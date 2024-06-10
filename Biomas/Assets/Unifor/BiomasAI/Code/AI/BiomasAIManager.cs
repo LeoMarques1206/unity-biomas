@@ -41,7 +41,7 @@ Especificamente, voc� conhece os biomas brasileiros, sua fauna e flora.
             var data = BiomasResources.LoadDataResource(_predefinedDataResource);
             Debug.Log(_predefinedDataResource.ToString());
             _cache = new BiomasCache(data);
-        }
+        } 
 
         private void OnDestroy()
         {
