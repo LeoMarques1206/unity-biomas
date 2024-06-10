@@ -37,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
     public bool canMove = true;
     //se o wally esta na cena
     public bool hasWally = true;
+     public bool hasViolet = true;
 
     private int remainingJumps = 2; // Contador para pulos restantes
 
