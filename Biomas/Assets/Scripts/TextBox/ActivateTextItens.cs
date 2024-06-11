@@ -12,7 +12,7 @@ public class ActivateTextItens : MonoBehaviour
 
     void Start()
     {
-        
+        Debug.Log("Timescale atual: " + Time.timeScale);
         dialogueScript = dialogue.GetComponent<Dialogue>();
        
         if (dialogueScript == null)
@@ -20,11 +20,12 @@ public class ActivateTextItens : MonoBehaviour
             Debug.LogError("DialogueScript não encontrado no objeto com a tag 'Player'");
         }
     }
+
     public void OnTriggerEnter2D(Collider2D other)
     {
         if(other.CompareTag("Player"))
         {
-    
+            
             if(entrou == false)
             {
                 if(dialogueScript != null)
@@ -35,14 +36,16 @@ public class ActivateTextItens : MonoBehaviour
                 
                 src.clip = sfx;
                 src.Play();
-                Invoke("DestroyBox", 5f);
+                Invoke("DestroyBox", 5.0f);
+                //Debug.Log("chegouAqui");
                 entrou = true;
-            }      
+            }  
         }
     }
 
     public void DestroyBox()
     {
-        Destroy(dialogue);
+        Debug.Log("Chamou");
+        dialogue.SetActive(false);
     }
 }
