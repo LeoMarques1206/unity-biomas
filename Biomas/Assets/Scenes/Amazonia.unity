@@ -15912,6 +15912,9 @@ MonoBehaviour:
   dialogue: {fileID: 1561940618}
   src: {fileID: 574757061}
   sfx: {fileID: 8300000, guid: e720dab6bc7b4204c8fdc3ad247e6890, type: 3}
+  trigger: {fileID: 796038309}
+  nomeDoTriggerItem: Peixe
+  player: {fileID: 308563409}
 --- !u!1 &800282055
 GameObject:
   m_ObjectHideFlags: 0
@@ -18461,6 +18464,9 @@ MonoBehaviour:
   dialogue: {fileID: 1555388912}
   src: {fileID: 574757061}
   sfx: {fileID: 8300000, guid: e720dab6bc7b4204c8fdc3ad247e6890, type: 3}
+  trigger: {fileID: 0}
+  nomeDoTriggerItem: 
+  player: {fileID: 0}
 --- !u!1 &1029471367
 GameObject:
   m_ObjectHideFlags: 0
@@ -19617,7 +19623,6 @@ GameObject:
   - component: {fileID: 1107640348}
   - component: {fileID: 1107640347}
   - component: {fileID: 1107640351}
-  - component: {fileID: 1107640352}
   - component: {fileID: 1107640353}
   m_Layer: 0
   m_Name: Item
@@ -19744,21 +19749,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   floatDistance: 0.2
   floatSpeed: 0.1
---- !u!114 &1107640352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1107640346}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4040236ff5e973442b28e875878b7ea9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue: {fileID: 1561940618}
-  src: {fileID: 1966607266}
-  sfx: {fileID: 8300000, guid: e720dab6bc7b4204c8fdc3ad247e6890, type: 3}
 --- !u!61 &1107640353
 BoxCollider2D:
   m_ObjectHideFlags: 0
