@@ -20431,7 +20431,7 @@ MonoBehaviour:
   canvasGroup: {fileID: 518809391}
   conteudo: {fileID: 183044652}
   nomeDoTrigger: Escorpiao2
-  nome: "Escorpi\xE3o"
+  nome: Escorpiao
   bioma: Caatinga
   IA: {fileID: 956540103}
 --- !u!1 &1195052239

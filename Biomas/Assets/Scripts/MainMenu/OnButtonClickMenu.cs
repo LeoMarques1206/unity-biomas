@@ -36,6 +36,7 @@ public class MoveCameraOnButtonClick : MonoBehaviour
     public void creditos()
     {
         mainMenu.alpha = 0f;
+        mainMenu.interactable = false;
         cena.alpha = 1f;
         apertou = false;
         TranslateObjectDown(pata2, 3.7f);
@@ -45,6 +46,7 @@ public class MoveCameraOnButtonClick : MonoBehaviour
     public void dicas()
     {
         mainMenu.alpha = 0f;
+        mainMenu.interactable = false;
         cenaDicas.alpha = 1f;
         apertou = false;
         TranslateObjectDown(pata3, 3.7f);

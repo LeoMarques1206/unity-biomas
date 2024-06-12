@@ -20,6 +20,7 @@ public class OnButtonClickVoltar : MonoBehaviour
     {
         cena.alpha = 0f;
         mainMenu.alpha = 1f;
+        mainMenu.interactable = true;
         cenaDicas.alpha = 0f;
         Debug.Log("Clicou");
         cat.SetActive(true);
