@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ActivateTextItens : MonoBehaviour
 {
@@ -14,10 +15,18 @@ public class ActivateTextItens : MonoBehaviour
     public GameObject player;
     private PlayerMovement playerMovement;
 
+    private bool medalhaoSapoAtual;
+    private bool medalhaoCobraAtual;
+    private bool medalhaoMicoAtual;
+
     void Start()
     {
         dialogueScript = dialogue.GetComponent<Dialogue>();
         playerMovement = player.GetComponent<PlayerMovement>();
+
+        medalhaoSapoAtual = playerMovement.MedalhaoSapo;
+        medalhaoCobraAtual = playerMovement.MedalhaoCobra;
+        medalhaoMicoAtual = playerMovement.MedalhaoMico;
 
         if(trigger != null){
             if(playerMovement.hasPeixe && nomeDoTriggerItem == "Peixe")
@@ -48,15 +57,52 @@ public class ActivateTextItens : MonoBehaviour
             
             if(entrou == false)
             {
-                if(dialogueScript != null)
+                Debug.Log(SceneManager.GetActiveScene().name);
+                if(SceneManager.GetActiveScene().name == "Amazonia")
                 {
-                    dialogueScript.gameObject.SetActive(true);
-                    dialogueScript.StartDialogue();
+                    if(!medalhaoSapoAtual && dialogueScript != null)
+                    {
+                        dialogueScript.gameObject.SetActive(true);
+                        dialogueScript.StartDialogue();
+                    }
+
+                    if(!medalhaoSapoAtual)
+                    {
+                        Debug.Log("som");
+                        src.clip = sfx;
+                        src.Play();
+                    }
+
+                }
+                else if(SceneManager.GetActiveScene().name == "Caatinga")
+                {
+                    if(!medalhaoCobraAtual && dialogueScript != null)
+                    {
+                        dialogueScript.gameObject.SetActive(true);
+                        dialogueScript.StartDialogue();
+                    }
+
+                    if(!medalhaoCobraAtual)
+                    {
+                        src.clip = sfx;
+                        src.Play();
+                    }
+                }
+                else if(SceneManager.GetActiveScene().name == "MataAtlantica")
+                {
+                    if(!medalhaoMicoAtual && dialogueScript != null)
+                    {
+                        dialogueScript.gameObject.SetActive(true);
+                        dialogueScript.StartDialogue();
+                    }
+
+                    if(!medalhaoMicoAtual)
+                    {
+                        src.clip = sfx;
+                        src.Play();
+                    }
                 }
                 Invoke("QuebraBox", 5.0f);
-                src.clip = sfx;
-                src.Play();
-                //Debug.Log("chegouAqui");
                 entrou = true;
             }  
         }
