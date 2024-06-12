@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 091fd18b211607244bb0a0a220ca624b
+guid: 0c7efb189a97f0d40afe3ec9fdd7029b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,8 +48,8 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 70
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 445, y: 1530, z: 1766, w: 710}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -93,19 +93,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -113,10 +100,10 @@ TextureImporter:
       name: BolaLa_0
       rect:
         serializedVersion: 2
-        x: 34
-        y: 41
-        width: 26
-        height: 23
+        x: 565
+        y: 1705
+        width: 7418
+        height: 6562
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +111,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7231b2419bfbfd943bd46f606382bb07
-      internalID: -1616786461
+      spriteID: e00c1d959dab18e46b8a5d5f75fc2175
+      internalID: -1743229626
       vertices: []
       indices: 
       edges: []
@@ -134,14 +121,14 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BolaLa_0: -1616786461
+      BolaLa_0: -1743229626
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -23618,7 +23618,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 902786567}
   itemName: "Bola de l\xE3"
-  sprite: {fileID: -1616786461, guid: 091fd18b211607244bb0a0a220ca624b, type: 3}
+  sprite: {fileID: -1743229626, guid: 0c7efb189a97f0d40afe3ec9fdd7029b, type: 3}
   itemDescription: O brinquedo favorito de violeta
 --- !u!50 &902786571
 Rigidbody2D:
@@ -23679,7 +23679,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.014863938, y: -0.026762776}
+  m_Offset: {x: -0.040718146, y: -0.061234847}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -23690,7 +23690,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.4190055, y: 0.53195345}
+  m_Size: {x: 0.4362415, y: 0.43543258}
   m_EdgeRadius: 0
 --- !u!4 &902786573
 Transform:
@@ -23701,7 +23701,7 @@ Transform:
   m_GameObject: {fileID: 902786567}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.36, y: -4.12, z: 0.005634382}
+  m_LocalPosition: {x: 15.369, y: -4.12, z: 0.005634382}
   m_LocalScale: {x: 1.1205963, y: 1.1205963, z: 1.1205963}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -23740,7 +23740,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.014863938, y: -0.026762776}
+  m_Offset: {x: -0.040718578, y: -0.059511274}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -23751,7 +23751,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.4190055, y: 0.53195345}
+  m_Size: {x: 0.43624234, y: 0.43887973}
   m_EdgeRadius: 0
 --- !u!1 &913229419
 GameObject:
@@ -26850,8 +26850,8 @@ Transform:
   m_GameObject: {fileID: 1087238673}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.06, y: -0.05, z: -0.005634382}
-  m_LocalScale: {x: 1.5865031, y: 1.5865031, z: 1.5865031}
+  m_LocalPosition: {x: -0.060001, y: -0.050003, z: -0.0056344}
+  m_LocalScale: {x: 0.005947588, y: 0.005947588, z: 0.005947588}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 902786573}
@@ -26918,12 +26918,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1616786461, guid: 091fd18b211607244bb0a0a220ca624b, type: 3}
+  m_Sprite: {fileID: -1743229626, guid: 0c7efb189a97f0d40afe3ec9fdd7029b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.64}
+  m_Size: {x: 74.19811, y: 65.619995}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
