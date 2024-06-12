@@ -29520,8 +29520,8 @@ MonoBehaviour:
   src: {fileID: 1696237170}
   sfx: {fileID: 8300000, guid: e720dab6bc7b4204c8fdc3ad247e6890, type: 3}
   trigger: {fileID: 0}
-  nomeDoTriggerItem: 
-  player: {fileID: 0}
+  nomeDoTriggerItem: guia
+  player: {fileID: 996941754}
 --- !u!114 &1791941171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31050,7 +31050,7 @@ Transform:
   m_GameObject: {fileID: 1843945254}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.599, y: -3.469, z: 0.005634382}
+  m_LocalPosition: {x: 36.34, y: -0.81, z: 0.005634382}
   m_LocalScale: {x: 0.93813, y: 0.93813, z: 0.93813}
   m_ConstrainProportionsScale: 0
   m_Children:

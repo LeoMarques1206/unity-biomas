@@ -18464,9 +18464,9 @@ MonoBehaviour:
   dialogue: {fileID: 1555388912}
   src: {fileID: 574757061}
   sfx: {fileID: 8300000, guid: e720dab6bc7b4204c8fdc3ad247e6890, type: 3}
-  trigger: {fileID: 0}
-  nomeDoTriggerItem: 
-  player: {fileID: 0}
+  trigger: {fileID: 1016785562}
+  nomeDoTriggerItem: guia
+  player: {fileID: 308563409}
 --- !u!1 &1029471367
 GameObject:
   m_ObjectHideFlags: 0
@@ -20455,7 +20455,7 @@ MonoBehaviour:
   canvasGroup: {fileID: 1981999577}
   conteudo: {fileID: 1966437144}
   nomeDoTrigger: CopoLeiteIA3
-  nome: Copo de leite
+  nome: Copo-de-leite
   bioma: "Amaz\xF4nia"
   IA: {fileID: 2047030907}
 --- !u!1001 &1178869791
@@ -22964,7 +22964,7 @@ MonoBehaviour:
   canvasGroup: {fileID: 1981999577}
   conteudo: {fileID: 1966437144}
   nomeDoTrigger: CopoLeiteIA4
-  nome: Copo de leite
+  nome: Copo-de-leite
   bioma: "Amaz\xF4nia"
   IA: {fileID: 2047030907}
 --- !u!1 &1356787133
@@ -25613,7 +25613,7 @@ MonoBehaviour:
   canvasGroup: {fileID: 1981999577}
   conteudo: {fileID: 1966437144}
   nomeDoTrigger: CopoLeiteIA2
-  nome: Copo de leite
+  nome: Copo-de-leite
   bioma: "Amaz\xF4nia"
   IA: {fileID: 2047030907}
 --- !u!1 &1499197353

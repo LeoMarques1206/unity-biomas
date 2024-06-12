@@ -54,6 +54,9 @@ TagManager:
   - name: Cat
     uniqueID: 2511640585
     locked: 0
+  - name: DeadFade
+    uniqueID: 3405306685
+    locked: 0
   - name: UI
     uniqueID: 2650802445
     locked: 0

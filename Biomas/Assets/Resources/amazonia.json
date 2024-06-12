@@ -9,12 +9,16 @@
           "Description": "A capivara é o maior roedor do mundo, encontrada em toda a América do Sul, incluindo a Amazônia. Têm corpos robustos e compactos, com pelagem marrom acinzentada, cabeças grandes, olhos e orelhas pequenos, e pernas curtas e fortes. São semi-aquáticas, vivendo perto de rios, lagos e pântanos. Comem principalmente plantas e vivem em grandes grupos, gostando de tomar sol e nadar juntas."
         },
         {
+          "Name": "Cobra",
+          "Description": "As cobras da Amazônia, incluindo sucuris e jararacas, são adaptadas ao ambiente úmido e denso da floresta tropical, desempenhando um papel crucial no controle de populações de presas e manutenção do equilíbrio ecológico."
+        },
+        {
           "Name": "Vitória Régia",
-          "Description": "A vitória-régia é uma planta aquática famosa pela beleza de suas grandes folhas redondas. Ela é encontrada em ambientes aquáticos tranquilos, como lagos e pântanos na região amazônica. Suas folhas têm uma estrutura única que lhes permite flutuar na superfície da água. As flores da vitória-régia são grandes e brancas, e florescem à noite, exalando um perfume doce e atraindo besouros polinizadores. Durante o dia, as flores se fecham novamente."
+          "Description": "A vitória-régia, planta aquática nativa da Amazônia, é conhecida por suas folhas flutuantes gigantes e flores grandes, contribuindo para a biodiversidade e servindo como habitat para diversas espécies aquáticas."
         },
         {
           "Name": "Piranha",
-          "Description": "A piranha é um peixe carnívoro encontrado nos rios da Amazônia. Elas são conhecidas por sua dentição afiada e poderosa, e por sua reputação de predadoras vorazes. As piranhas têm corpos comprimidos lateralmente e são geralmente prateadas, com manchas avermelhadas. Vivem em cardumes e se alimentam de uma variedade de presas, incluindo peixes menores, animais feridos e carcaças. Portanto tome cuidado ao atravessar os rios da amazônia! As piranhas podem te machucar!"
+          "Description": "A piranha, comum nos rios da Amazônia, é um peixe carnívoro conhecido por seus dentes afiados e comportamento oportunista, desempenhando um papel importante na limpeza de detritos e controle de populações aquáticas."
         },
         {
           "Name": "Sapo",
@@ -22,7 +26,7 @@
         },
         {
           "Name": "Arara-Azul",
-          "Description": "A arara-azul é uma das aves mais icônicas da Amazônia. Elas têm plumagem predominantemente azul, com áreas de amarelo ao redor dos olhos e garganta, e asas e caudas longas. São aves sociais que vivem em grupos familiares e se comunicam através de vocalizações altas e distintas. Suas dietas consistem principalmente de frutas, sementes e nozes, e desempenham um papel importante na dispersão de sementes na floresta. Infelizmente, algumas espécies de araras-azuis estão ameaçadas de extinção devido à perda de habitat e ao tráfico ilegal de animais selvagens."
+          "Description": "A arara-azul, nativa da Amazônia, é conhecida por sua plumagem vibrante e por ajudar na dispersão de sementes, contribuindo para a biodiversidade da floresta tropical."
         },
         {
           "Name": "Araponga da Amazônia",
@@ -30,7 +34,7 @@
         },
         {
           "Name": "Onça-Pintada",
-          "Description": "A onça-pintada é o maior felino das Américas e é encontrada em uma variedade de habitats na Amazônia, incluindo florestas tropicais, pântanos e savanas. Elas têm pelagem amarela com manchas pretas que variam em tamanho e padrão, tornando-as camufladas na vegetação densa da floresta. São predadores poderosos e ágeis, capazes de caçar uma variedade de presas. Apesar de sua reputação como caçadoras solitárias, as onças-pintadas são animais majestosos que requerem nossa proteção em seus habitats. Elas desempenham um papel crucial no controle das populações de presas e na manutenção do equilíbrio ecológico na Amazônia."
+          "Description": "A onça-pintada, encontrada na Amazônia, é o maior felino das Américas e desempenha um papel crucial como predador de topo, ajudando a manter o equilíbrio ecológico da floresta tropical."
         },
         {
           "Name": "Planta Carnívora",

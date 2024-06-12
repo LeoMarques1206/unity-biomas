@@ -19,19 +19,20 @@ public class ActivateTextItens : MonoBehaviour
         dialogueScript = dialogue.GetComponent<Dialogue>();
         playerMovement = player.GetComponent<PlayerMovement>();
 
-        if(playerMovement.hasPeixe && nomeDoTriggerItem == "Peixe")
-        {
-            trigger.SetActive(false);
+        if(trigger != null){
+            if(playerMovement.hasPeixe && nomeDoTriggerItem == "Peixe")
+            {
+                trigger.SetActive(false);
+            }
+            if(playerMovement.hasLeite && nomeDoTriggerItem == "Leite")
+            {
+                trigger.SetActive(false);
+            }
+            if(playerMovement.hasBola && nomeDoTriggerItem == "Bola")
+            {
+                trigger.SetActive(false);
+            }
         }
-        if(playerMovement.hasLeite && nomeDoTriggerItem == "Leite")
-        {
-            trigger.SetActive(false);
-        }
-        if(playerMovement.hasBola && nomeDoTriggerItem == "Bola")
-        {
-            trigger.SetActive(false);
-        }
-       
         if (dialogueScript == null)
         {
             Debug.LogError("DialogueScript não encontrado no objeto com a tag 'Player'");
